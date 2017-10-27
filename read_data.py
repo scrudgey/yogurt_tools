@@ -6,6 +6,7 @@ from collections import namedtuple
 import ipdb
 from collections import Counter
 from operator import attrgetter
+from sets import Set
 
 Event = namedtuple('Event', ['id', 'name', 'desc', 'disturbing', 'disgusting', 'chaos', 'offensive', 'positive'])
 
@@ -15,7 +16,6 @@ def read_data(prepend=None):
     filename = os.path.join(prepend, filename)
   with open(filename) as f:
     lines = f.readlines()
-
   filename = 'commercial_history.txt'
   if prepend:
     filename = os.path.join(prepend, filename)
@@ -47,11 +47,9 @@ def maxes(events):
 
 def hist(events):
   noun_counts = Counter([event.name for event in events])
-  # labels, values = zip(*noun_counts.items())
   labels, values = zip(*noun_counts.most_common())
   total = sum(noun_counts.values())
   values = [value/(1.0*total) for value in values]
-  # ipdb.set_trace()
   pos = np.arange(len(labels))+.5
   fig = plt.figure(figsize=(10, 10))
   ax = fig.add_axes([0.3, 0.1, 0.6, 0.8])
@@ -63,10 +61,44 @@ def hist(events):
   plt.show(fig)
 
 def highestn(events, n=3):
+  count = Counter()
+  deltas = []
+  note = []
   for key in ['disturbing', 'disgusting', 'chaos', 'offensive', 'positive']:
     print 'Top {} most {}'.format(n, key)
     sort = sorted(events, key=attrgetter(key))[::-1]
+    f = attrgetter(key)
+    for i in range(n):
+      print '{}: {}'.format(i, sort[i].desc)
+      count.update([sort[i].id])
+      deltas.append(f(sort[i])-f(sort[i+1]))
+      note.append(sort[i])
+    print ''
 
+  print 'notable events'
+  for i, _ in count.most_common(3):
+    event = events[i]
+    print '{}: {}'.format(event.name, event.desc)
+  print ''
+
+  print 'notable deltas'
+  notes = zip(deltas, note)
+  sort = sorted(notes)[::-1]
+  notable = Set()
+  i = 0
+  while len(notable) < 3:
+    notable.add(sort[i][1])
+    print i
+    i += 1
+  for event in notable:
+    print '{}: {}'.format(event.name, event.desc)
+  print ''
+
+  print 'most common events'
+  noun_counts = Counter([event.name for event in events])
+  labels, values = zip(*noun_counts.most_common(3))
+  for label, value in zip(labels, values):
+    print '{}: {}'.format(label, value)
 
 def cumplot(events):
   fig = plt.figure(figsize=(10, 10))
@@ -88,8 +120,7 @@ def pie(events):
   ax.pie(values, labels=labels)
   plt.show(fig)
 
-# largest n
-# largest n %
+# n highest deltas
 # most frequent occurrences
 # many plots on one page?
 
