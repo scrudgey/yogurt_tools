@@ -1,0 +1,36 @@
+speech act 0 0 0 0 0
+speech act 0 0 0 0 0
+eating 0 0 0 0 0
+yogurt eating 0 0 0 0 5
+speech act 0 0 0 0 25
+speech act 0 0 0 0 25
+violence 10 0 10 0 0
+violence 10 0 10 0 0
+spilling 0 0 1 0 0
+spilling 0 0 1 0 0
+violence 10 0 10 0 0
+violence 10 0 10 0 0
+violence 10 0 10 0 0
+violence 10 0 10 0 0
+violence 10 0 10 0 0
+collision 0 0 50 0 0
+spilling 0 0 1 0 0
+spilling 0 0 1 0 0
+collision 0 0 50 0 0
+speech act 0 0 0 0 -25
+speech act 0 0 0 0 -25
+eating 100 75 200 500 0
+cannibalism 350 500 100 100 -300
+speech act 13 0 5 0 -40
+speech act 13 0 5 0 -40
+eating 0 75 50 0 0
+yogurt eating 0 0 0 0 5
+eating of yogurt on the floor 0 35 10 0 0
+vomiting 5 30 40 0 0
+vomiting yogurt 5 30 40 0 0
+speech act 0 0 0 0 -25
+speech act 0 0 0 0 -25
+speech act 0 0 0 0 0
+speech act 0 0 0 0 0
+collision 0 0 50 0 0
+spilling 0 0 1 0 0
