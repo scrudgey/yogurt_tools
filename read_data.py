@@ -82,16 +82,18 @@ def highestn(events, n=3):
   print ''
 
   print 'notable deltas'
-  notes = zip(deltas, note)
-  sort = sorted(notes)[::-1]
+  # notes = zip(deltas, note)
+  sort = sorted(zip(deltas, note))[::-1]
   notable = Set()
   i = 0
   while len(notable) < 3:
     notable.add(sort[i][1])
-    print i
     i += 1
   for event in notable:
     print '{}: {}'.format(event.name, event.desc)
+  print ''
+  for d, n in zip(deltas, note):
+    print d, n.desc
   print ''
 
   print 'most common events'
