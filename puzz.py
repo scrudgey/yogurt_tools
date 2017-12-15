@@ -2,6 +2,7 @@
 """Yogurt commercial puzzle planning code
 Using graph theory to plan out the order of puzzles and abilities.
 """
+import networkx as nx
 
 class Node(object):
   def __init__(self, name):
@@ -30,7 +31,7 @@ class Ability(Node):
       if req not in nodelist:
         enable = False
     return enable
-  def calc_reqs(self, abilities):
+  def calc_eclipses(self, abilities):
     """Check and see if I eclipse any abilities in the provided list.
     If I do, those abilities must be placed in my immediate past.
     That is checked in enabled() .
@@ -55,7 +56,7 @@ class Network(object):
     self.obstacles = {}
     self.net = {}
     self.add_obstacle('start')
-    self.net['start'] = []
+    self.net['start'] = set()
     # TODO: make this a little nicer?
     for name in initial_nodes:
       self.add_ability(name)
@@ -81,11 +82,10 @@ class Network(object):
       for newnode in self.past(req):
         pastnodes.add(newnode)
     return pastnodes
-  def calc_ability_prereqs(self):
-    """Initialize the ability prereqs."""
+  def calc_ability_eclipses(self):
+    """Initialize the ability eclipses."""
     for a in self.abilities.values():
-      a.calc_reqs(self.abilities.values())
-
+      a.calc_eclipses(self.abilities.values())
   def defeats(self, ability, obstacle):
     """Ability defeats obstacle."""
     assert ability in self.abilities
@@ -96,13 +96,12 @@ class Network(object):
     """node1 unlocks node2"""
     assert node1 in self.net
     assert node2 in self.nodes
-    assert node2 in self.enabled_nodes(node1)
+    assert node2 in self.enabled_nodes(node1) or node2 in self.net
     if node2 not in self.net:
-      self.net[node2] = []
-    self.net[node2].append(node1)
+      self.net[node2] = set()
+    self.net[node2].add(node1)
     self.nodes[node1].placed = True
     self.nodes[node2].placed = True
-
   def enabled_nodes(self, branch):
     """From the branch node, what can I place next?"""
     assert branch in self.net
@@ -111,13 +110,15 @@ class Network(object):
     for obstacle in self.obstacles.values():
       if obstacle.enabled(placed_nodes):
         enableds.add(obstacle.name)
-    for ability in self.abilities.values():
-      if ability.enabled(self.past(branch)):
-        enableds.add(ability.name)
+    if branch in self.obstacles:
+      for ability in self.abilities.values():
+        if ability.enabled(self.past(branch)):
+          enableds.add(ability.name)
     return enableds
-
-
-
-# i need a way to differentiate abilities and obstacles
-# obstacles have requirements
-# both have prereqs but they are calculated different?
+  def nxgraph(self):
+    """Return a NetworkX graph suitable for plotting"""
+    dl = {}
+    for key in self.net.keys():
+        dl[key] = list(self.net[key])
+    labels = [node for node in self.net]
+    return nx.Graph(dl)
