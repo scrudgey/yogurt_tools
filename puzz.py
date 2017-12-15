@@ -14,7 +14,7 @@ class Node(object):
       return False
     enable = False
     for req in self.reqs:
-      if req not in nodelist:
+      if req in nodelist:
         enable = True
     return enable
 class Ability(Node):
@@ -44,7 +44,7 @@ class Ability(Node):
       for d in a.defeats:
         if d not in self.defeats:
           eclipsed = False
-      if eclipsed:
+      if eclipsed and len(self.defeats) != len(a.defeats):
         self.reqs.add(a.name)
 
 
@@ -106,7 +106,7 @@ class Network(object):
   def enabled_nodes(self, branch):
     """From the branch node, what can I place next?"""
     assert branch in self.net
-    placed_nodes = [n.name for n in self.nodes.values() if n.placed]
+    placed_nodes = self.net.keys()
     enableds = set()
     for obstacle in self.obstacles.values():
       if obstacle.enabled(placed_nodes):
