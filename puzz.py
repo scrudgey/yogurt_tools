@@ -6,40 +6,31 @@ Using graph theory to plan out the order of puzzles and abilities.
 class Node(object):
   def __init__(self, name):
     self.name = name
-    self.reqs = []
+    self.reqs = set()
     self.placed = False
-  def req_check(self, nodelist):
+  def enabled(self, nodelist):
     """Check that requirements are met by the nodes in nodelist."""
-    # TODO: support ANDs in requirements
+    if self.placed:
+      return False
+    enable = False
+    for req in self.reqs:
+      if req not in nodelist:
+        enable = True
+    return enable
+
+class Ability(Node):
+  def __init__(self, name):
+    super(Ability, self).__init__(name)
+    self.defeats = set()
+  def enabled(self, nodelist):
+    """Check that requirements are met by the nodes in nodelist."""
+    if self.placed:
+      return False
     enable = True
     for req in self.reqs:
       if req not in nodelist:
         enable = False
     return enable
-
-class Obstacle(Node):
-  def enabled(self, network):
-    """given a list of nodes, check that I satisfy my requirements.
-    nodelist: list of all currently placed nodes in the tree.
-    """
-    if placed:
-      return False
-    nodelist = network.nodes.values()
-    return req_check(nodelist)
-
-class Ability(Node):
-  def __init__(self, name):
-    super().__init__(name)
-    self.defeats = []
-  def enabled(self, network):
-    """check that all precedents have been placed first.
-    nodelist: all nodes in my past.
-    """
-    if placed:
-      return False
-    nodelist = network.past(self)
-    return req_check(nodelist)
-
   def calc_reqs(self, abilities):
     """Check and see if I obsolete any abilities in the provided list.
     If I do, those abilities must be placed in my immediate past.
@@ -48,67 +39,72 @@ class Ability(Node):
     # TODO: implement this
     pass
 
-
-
 class Network(object):
   def __init__(self, initial_nodes):
-    # TODO: make this a little nicer.
     self.nodes = {}
+    self.abilities = {}
+    self.obstacles = {}
     self.net = {}
     self.add_obstacle('start')
+    self.net['start'] = []
+    # TODO: make this a little nicer?
     for name in initial_nodes:
       self.add_ability(name)
       self.add_connection('start', name)
   def add_obstacle(self, name):
-    node = Obstacle(name)
+    """Create a new obstacle node."""
+    node = Node(name)
     self.nodes[name] = node
-    return node
+    self.obstacles[name] = node
   def add_ability(self, name):
+    """Create a new ability node."""
     node = Ability(name)
     self.nodes[name] = node
-    return node
-
-  def defeats(self, ability, obstacle):
-    """Ability defeats obstacle."""
-    assert ability in self.nodes.keys()
-    assert obstacle in self.nodes.keys()
-    self.nodes[obstacle].reqs.append(self.nodes[ability])
-    self.nodes[ability].defeats.append(self.nodes[obstacle])
-
-  def add_connection(self, node1, node2):
-    """node1 is unlocked by node2"""
-    if node2 not in self.net.keys():
-      self.net[node2] = []
-    if node1 not in self.net.keys():
-      self.net[node1] = []
-    self.net[node1].append(node2)
-    self.nodes[node1].placed = True
-    self.nodes[node2].placed = True
-
+    self.abilities[name] = node
   def past(self, node):
-    """Return the list of all nodes in the past of node"""
+    """Return a list of all nodes that had to have been
+    visited by the player before node.
+    """
+    assert node in self.net
     pastnodes = set()
     pastnodes.add(node)
     for req in self.net[node]:
       for newnode in self.past(req):
         pastnodes.add(newnode)
     return pastnodes
-
-  def calc_ability_prereqs(self):
-    """Initialize the ability prereqs."""
-    for node in self.nodes.values():
-      if isinstance(node, Ability):
-        node.calc_reqs()
+  # def calc_ability_prereqs(self):
+  #   """Initialize the ability prereqs."""
+  #   for a in self.abilities:
+  #     self.nodes[a].calc_reqs(self.abilities.keys())
+  def defeats(self, ability, obstacle):
+    """Ability defeats obstacle."""
+    assert ability in self.abilities
+    assert obstacle in self.obstacles
+    self.obstacles[obstacle].reqs.add(ability)
+    self.abilities[ability].defeats.add(obstacle)
+  def add_connection(self, node1, node2):
+    """node1 unlocks node2"""
+    assert node1 in self.net
+    assert node2 in self.nodes
+    assert node2 in self.enabled_nodes(node1)
+    if node2 not in self.net:
+      self.net[node2] = []
+    self.net[node2].append(node1)
+    self.nodes[node1].placed = True
+    self.nodes[node2].placed = True
 
   def enabled_nodes(self, branch):
     """From the branch node, what can I place next?"""
-    assert branch in self.net.keys()
-    pastnodes = past(self.net[branch])
+    assert branch in self.net
+    placed_nodes = [n.name for n in self.nodes.values() if n.placed]
     enableds = set()
-    for node in nodes:
-      if node.enabled():
-        enableds.add(node)
-    return enabled_nodes
+    for obstacle in self.obstacles.values():
+      if obstacle.enabled(placed_nodes):
+        enableds.add(obstacle.name)
+    for ability in self.abilities.values():
+      if ability.enabled(self.past(branch)):
+        enableds.add(ability.name)
+    return enableds
 
 
 
