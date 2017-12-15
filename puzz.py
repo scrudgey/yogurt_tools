@@ -17,7 +17,6 @@ class Node(object):
       if req not in nodelist:
         enable = True
     return enable
-
 class Ability(Node):
   def __init__(self, name):
     super(Ability, self).__init__(name)
@@ -32,12 +31,22 @@ class Ability(Node):
         enable = False
     return enable
   def calc_reqs(self, abilities):
-    """Check and see if I obsolete any abilities in the provided list.
+    """Check and see if I eclipse any abilities in the provided list.
     If I do, those abilities must be placed in my immediate past.
     That is checked in enabled() .
     """
-    # TODO: implement this
-    pass
+    for a in abilities:
+      if a == self:
+        continue
+      # i eclipse an ability if, for every obstacle it can
+      # defeat, i can defeat it too
+      eclipsed = True
+      for d in a.defeats:
+        if d not in self.defeats:
+          eclipsed = False
+      if eclipsed:
+        self.reqs.add(a.name)
+
 
 class Network(object):
   def __init__(self, initial_nodes):
@@ -72,10 +81,11 @@ class Network(object):
       for newnode in self.past(req):
         pastnodes.add(newnode)
     return pastnodes
-  # def calc_ability_prereqs(self):
-  #   """Initialize the ability prereqs."""
-  #   for a in self.abilities:
-  #     self.nodes[a].calc_reqs(self.abilities.keys())
+  def calc_ability_prereqs(self):
+    """Initialize the ability prereqs."""
+    for a in self.abilities.values():
+      a.calc_reqs(self.abilities.values())
+
   def defeats(self, ability, obstacle):
     """Ability defeats obstacle."""
     assert ability in self.abilities
