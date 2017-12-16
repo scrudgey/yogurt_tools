@@ -60,7 +60,6 @@ class Ability(Node):
       # i eclipse an ability if, for every obstacle it can
       # defeat, i can defeat it too
       overlaps = [d in self.defeats for d in a.defeats]
-      # print overlaps
       if len(overlaps) == 0:
         continue
       if all(overlaps) and len(self.defeats) != len(a.defeats):
@@ -153,6 +152,44 @@ class Network(object):
       for node in placed_nodes:
         enableds.pop(node, None)
     return enableds
+  def eclipsed_abilities(self):
+    """Return a list of all abilities that are still
+    eclipsed.
+    """
+    eclipsed = {}
+    for a in self.abilities.keys():
+      eclipsed[a] = self.nodes[a].reqs
+    for node in self.net:
+      for enabled in self.enabled_nodes(node):
+        eclipsed.pop(enabled, None)
+    for node in self.net:
+      for e in eclipsed:
+        eclipsed[e].discard(node)
+    print eclipsed
+  def locked_obstacles(self):
+    """Return a lit of all obstacles that are still locked."""
+    locked = {}
+    for o in self.obstacles.keys():
+      locked[o] = self.nodes[o].reqs
+    for enabled in self.enabled_nodes('start'):
+      locked.pop(enabled, None)
+    for enabled in self.enabled_nodes('start'):
+      for l in locked:
+        locked[l].discard(enabled)
+    print locked
+  def compare(self, ability1, ability2):
+    """Show the overlap and non-overlap between the
+    obstacles that are defeated by two abilities.
+    """
+    d1 = self.nodes[ability1].defeats
+    d2 = self.nodes[ability2].defeats
+    overlap = d1.intersection(d2)
+    nonoverlap = d1.union(d2) - overlap
+    print 'overlap:'
+    print overlap
+    print 'non overlap:'
+    print nonoverlap
+
   def nxgraph(self):
     """Return a NetworkX graph suitable for plotting"""
     dl = {}
