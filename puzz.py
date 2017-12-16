@@ -60,7 +60,10 @@ class Ability(Node):
       # i eclipse an ability if, for every obstacle it can
       # defeat, i can defeat it too
       overlaps = [d in self.defeats for d in a.defeats]
-      if all(overlaps) and len(self.defeats) != len(a.defeats) and len(overlaps) > 0:
+      # print overlaps
+      if len(overlaps) == 0:
+        continue
+      if all(overlaps) and len(self.defeats) != len(a.defeats):
         self.reqs.add(a.name)
 
 
@@ -100,6 +103,7 @@ class Network(object):
   def calc_ability_eclipses(self):
     """Initialize the ability eclipses."""
     for a in self.abilities.values():
+      a.reqs = set()
       a.calc_eclipses(self.abilities.values())
   def defeats(self, ability, obstacle):
     """Ability defeats obstacle."""
@@ -156,13 +160,16 @@ class Network(object):
         dl[key] = list(self.net[key])
     labels = [node for node in self.net]
     return nx.Graph(dl)
-  def plot(self):
+  def plot(self, spring=False):
     """Visualize the graph."""
     fig = plt.figure(figsize=(5, 5))
     ax = fig.add_axes([0.2, 0.2, 0.8, 0.8])
 
     g = self.nxgraph()
-    pos=nx.networkx.spectral_layout(g)
+    if spring:
+      pos=nx.networkx.spring_layout(g)
+    else:
+      pos=nx.networkx.spectral_layout(g)
 
     abilities = [node for node in self.abilities if node in self.net]
     obstacles = [node for node in self.obstacles if node in self.net]
