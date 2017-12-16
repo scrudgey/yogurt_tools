@@ -167,22 +167,32 @@ class Network(object):
     abilities = [node for node in self.abilities if node in self.net]
     obstacles = [node for node in self.obstacles if node in self.net]
     labels = {node:self.nodes[node].name for node in self.net}
+    start_end = ['start']
+    if 'end' in self.net:
+      start_end.append('end')
 
-    nx.draw_networkx_nodes(g, pos, nodelist=abilities, alpha=0.5, ax=ax)
-    nx.draw_networkx_nodes(g, pos, nodelist=obstacles, node_color='b', alpha=0.5, ax=ax)
-    nx.draw_networkx_nodes(g, pos, nodelist=['start'], node_color='g', alpha=0.5, ax=ax)
+    nx.draw_networkx_nodes(g, pos, nodelist=abilities, ax=ax,
+                           alpha=0.5, node_size=500)
+    nx.draw_networkx_nodes(g, pos, nodelist=obstacles, ax=ax,
+                           node_color='b', alpha=0.5, node_size=500)
+    nx.draw_networkx_nodes(g, pos, nodelist=start_end, ax=ax,
+                           node_color='g', alpha=0.5, node_size=500)
 
     nx.draw_networkx_edges(g, pos, width=0.5, alpha=0.5, ax=ax)
     nx.draw_networkx_labels(g, pos, labels, ax=ax)
 
     ax.set_xticks([])
     ax.set_yticks([])
+    xlim = ax.get_xlim()
+    ylim = ax.get_ylim()
+    ax.set_xlim([xlim[0]*1.1, xlim[1]])
+    ax.set_ylim([ylim[0]*1.1, ylim[1]])
     reddots = Line2D([0], [0], linestyle=None, linewidth=0, color='r', marker='o', alpha=0.5,
                      markeredgecolor=None, markeredgewidth=0.0)
     bluedots = Line2D([0], [0], linestyle=None, linewidth=0, color='b', marker='o', alpha=0.5,
                       markeredgecolor=None, markeredgewidth=0.0)
     ax.legend((reddots, bluedots),
               ("ability", "obstacle"),
-              fontsize=14, numpoints=1, loc='best')
+              fontsize=12, numpoints=1, loc='lower left')
 
     plt.show(fig)
