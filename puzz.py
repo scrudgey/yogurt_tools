@@ -3,34 +3,47 @@
 Using graph theory to plan out the order of puzzles and abilities.
 """
 import networkx as nx
+import collections
 
 class Node(object):
   def __init__(self, name):
     self.name = name
     self.reqs = set()
     self.placed = False
+  def all_in(self, rlist, nodelist):
+    """Are all items in rlist are in nodelist?"""
+    ins = [r in nodelist for r in rlist]
+    return all(ins)
   def enabled(self, nodelist):
     """Check that requirements are met by the nodes in nodelist."""
-    if self.placed:
-      return False
     enable = False
     for req in self.reqs:
-      if req in nodelist:
-        enable = True
+      if isinstance(req, tuple):
+        enable = enable or self.all_in(req, nodelist)
+      else:
+        enable = enable or req in nodelist
     return enable
+  def enablers(self, nodelist):
+    """Which nodes in nodelist enab
+    """
+    required = set()
+    for req in self.reqs:
+      if isinstance(req, tuple):
+        if self.all_in(req, nodelist):
+          required.add(req)
+      else:
+        if req in nodelist:
+          required.add(req)
+    return required
+
+
 class Ability(Node):
   def __init__(self, name):
     super(Ability, self).__init__(name)
     self.defeats = set()
   def enabled(self, nodelist):
     """Check that requirements are met by the nodes in nodelist."""
-    if self.placed:
-      return False
-    enable = True
-    for req in self.reqs:
-      if req not in nodelist:
-        enable = False
-    return enable
+    return self.all_in(self.reqs, nodelist)
   def calc_eclipses(self, abilities):
     """Check and see if I eclipse any abilities in the provided list.
     If I do, those abilities must be placed in my immediate past.
@@ -88,32 +101,50 @@ class Network(object):
       a.calc_eclipses(self.abilities.values())
   def defeats(self, ability, obstacle):
     """Ability defeats obstacle."""
-    assert ability in self.abilities
     assert obstacle in self.obstacles
-    self.obstacles[obstacle].reqs.add(ability)
-    self.abilities[ability].defeats.add(obstacle)
+    ob = self.obstacles[obstacle]
+    if isinstance(ability, tuple):
+      for a in ability:
+        assert a in self.abilities
+    else:
+      assert ability in self.abilities
+      self.abilities[ability].defeats.add(obstacle)
+    ob.reqs.add(ability)
   def add_connection(self, node1, node2):
     """node1 unlocks node2"""
     assert node1 in self.net
     assert node2 in self.nodes
-    assert node2 in self.enabled_nodes(node1) or node2 in self.net
+    enabled = self.enabled_nodes(node1)
+    assert node2 in enabled or node2 in self.net
     if node2 not in self.net:
       self.net[node2] = set()
-    self.net[node2].add(node1)
     self.nodes[node1].placed = True
     self.nodes[node2].placed = True
-  def enabled_nodes(self, branch):
+    multis = [isinstance(req, tuple) for req in enabled[node2]]
+    if all(multis) and len(multis) > 0:
+      for req in enabled[node2]:
+        for r in req:
+          self.net[node2].add(r)
+    else:
+      self.net[node2].add(node1)
+
+  def enabled_nodes(self, branch, suppress_live=False):
     """From the branch node, what can I place next?"""
     assert branch in self.net
     placed_nodes = self.net.keys()
-    enableds = set()
+    enableds = {}
     for obstacle in self.obstacles.values():
       if obstacle.enabled(placed_nodes):
-        enableds.add(obstacle.name)
+        enableds[obstacle.name] = obstacle.enablers(placed_nodes)
     if branch in self.obstacles:
       for ability in self.abilities.values():
-        if ability.enabled(self.past(branch)):
-          enableds.add(ability.name)
+        pastbranch = self.past(branch)
+        if ability.enabled(pastbranch):
+          enableds[ability.name] = ability.enablers(pastbranch)
+    if suppress_live:
+      placed_nodes = [node for node in enableds if self.nodes[node].placed]
+      for node in placed_nodes:
+        enableds.pop(node, None)
     return enableds
   def nxgraph(self):
     """Return a NetworkX graph suitable for plotting"""
