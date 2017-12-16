@@ -4,6 +4,7 @@ Using graph theory to plan out the order of puzzles and abilities.
 """
 import networkx as nx
 import collections
+import matplotlib.pyplot as plt
 
 class Node(object):
   def __init__(self, name):
@@ -43,7 +44,10 @@ class Ability(Node):
     self.defeats = set()
   def enabled(self, nodelist):
     """Check that requirements are met by the nodes in nodelist."""
-    return self.all_in(self.reqs, nodelist)
+    if len(self.reqs) > 0:
+      return self.all_in(self.reqs, nodelist)
+    else:
+      return True
   def calc_eclipses(self, abilities):
     """Check and see if I eclipse any abilities in the provided list.
     If I do, those abilities must be placed in my immediate past.
@@ -54,11 +58,8 @@ class Ability(Node):
         continue
       # i eclipse an ability if, for every obstacle it can
       # defeat, i can defeat it too
-      eclipsed = True
-      for d in a.defeats:
-        if d not in self.defeats:
-          eclipsed = False
-      if eclipsed and len(self.defeats) != len(a.defeats):
+      overlaps = [d in self.defeats for d in a.defeats]
+      if all(overlaps) and len(self.defeats) != len(a.defeats) and len(overlaps) > 0:
         self.reqs.add(a.name)
 
 
@@ -110,6 +111,7 @@ class Network(object):
       assert ability in self.abilities
       self.abilities[ability].defeats.add(obstacle)
     ob.reqs.add(ability)
+    self.calc_ability_eclipses()
   def add_connection(self, node1, node2):
     """node1 unlocks node2"""
     assert node1 in self.net
@@ -153,3 +155,18 @@ class Network(object):
         dl[key] = list(self.net[key])
     labels = [node for node in self.net]
     return nx.Graph(dl)
+  def plot(self):
+    """Visualize the graph."""
+    g = self.nxgraph()
+    pos=nx.networkx.spring_layout(g)
+
+    abilities = [node for node in self.abilities if node in self.net]
+    obstacles = [node for node in self.obstacles if node in self.net]
+    labels = {node:self.nodes[node].name for node in self.net}
+
+    nx.draw_networkx_nodes(g, pos, nodelist=abilities, alpha=0.5)
+    nx.draw_networkx_nodes(g, pos, nodelist=obstacles, node_color='b', alpha=0.5)
+    nx.draw_networkx_edges(g, pos, width=0.5, alpha=0.5)
+    nx.draw_networkx_labels(g, pos, labels)
+
+    plt.show()
