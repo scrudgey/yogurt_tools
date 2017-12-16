@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import re
 import os
 from collections import namedtuple
-import ipdb
 from collections import Counter
 from operator import attrgetter
 from sets import Set
@@ -82,7 +81,6 @@ def highestn(events, n=3):
   print ''
 
   print 'notable deltas'
-  # notes = zip(deltas, note)
   sort = sorted(zip(deltas, note))[::-1]
   notable = Set()
   i = 0
@@ -121,18 +119,3 @@ def pie(events):
   ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])
   ax.pie(values, labels=labels)
   plt.show(fig)
-
-# n highest deltas
-# most frequent occurrences
-# many plots on one page?
-
-def go(fresh=False, prepend=None):
-  if fresh:
-    prepend='/Users/RSHAW/Library/Application Support/EpicBanana/Yogurt Commercial 3'
-  events, history = read_data(prepend=prepend)
-  # timeline(events)
-  # maxes(events)
-  # hist(events)
-  # cumplot(events)
-  # pie(events)
-  highestn(events)
