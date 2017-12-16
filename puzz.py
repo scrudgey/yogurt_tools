@@ -5,6 +5,7 @@ Using graph theory to plan out the order of puzzles and abilities.
 import networkx as nx
 import collections
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
 class Node(object):
   def __init__(self, name):
@@ -157,16 +158,31 @@ class Network(object):
     return nx.Graph(dl)
   def plot(self):
     """Visualize the graph."""
+    fig = plt.figure(figsize=(5, 5))
+    ax = fig.add_axes([0.2, 0.2, 0.8, 0.8])
+
     g = self.nxgraph()
-    pos=nx.networkx.spring_layout(g)
+    pos=nx.networkx.spectral_layout(g)
 
     abilities = [node for node in self.abilities if node in self.net]
     obstacles = [node for node in self.obstacles if node in self.net]
     labels = {node:self.nodes[node].name for node in self.net}
 
-    nx.draw_networkx_nodes(g, pos, nodelist=abilities, alpha=0.5)
-    nx.draw_networkx_nodes(g, pos, nodelist=obstacles, node_color='b', alpha=0.5)
-    nx.draw_networkx_edges(g, pos, width=0.5, alpha=0.5)
-    nx.draw_networkx_labels(g, pos, labels)
+    nx.draw_networkx_nodes(g, pos, nodelist=abilities, alpha=0.5, ax=ax)
+    nx.draw_networkx_nodes(g, pos, nodelist=obstacles, node_color='b', alpha=0.5, ax=ax)
+    nx.draw_networkx_nodes(g, pos, nodelist=['start'], node_color='g', alpha=0.5, ax=ax)
 
-    plt.show()
+    nx.draw_networkx_edges(g, pos, width=0.5, alpha=0.5, ax=ax)
+    nx.draw_networkx_labels(g, pos, labels, ax=ax)
+
+    ax.set_xticks([])
+    ax.set_yticks([])
+    reddots = Line2D([0], [0], linestyle=None, linewidth=0, color='r', marker='o', alpha=0.5,
+                     markeredgecolor=None, markeredgewidth=0.0)
+    bluedots = Line2D([0], [0], linestyle=None, linewidth=0, color='b', marker='o', alpha=0.5,
+                      markeredgecolor=None, markeredgewidth=0.0)
+    ax.legend((reddots, bluedots),
+              ("ability", "obstacle"),
+              fontsize=14, numpoints=1, loc='best')
+
+    plt.show(fig)
