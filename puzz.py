@@ -65,7 +65,6 @@ class Ability(Node):
       if all(overlaps) and len(self.defeats) != len(a.defeats):
         self.reqs.add(a.name)
 
-
 class Network(object):
   def __init__(self, initial_nodes):
     self.nodes = {}
@@ -152,31 +151,45 @@ class Network(object):
       for node in placed_nodes:
         enableds.pop(node, None)
     return enableds
-  def eclipsed_abilities(self):
+  def locked_abilities(self):
     """Return a list of all abilities that are still
     eclipsed.
     """
     eclipsed = {}
     for a in self.abilities.keys():
-      eclipsed[a] = self.nodes[a].reqs
+      eclipsed[a] = set(self.nodes[a].reqs)
     for node in self.net:
       for enabled in self.enabled_nodes(node):
         eclipsed.pop(enabled, None)
     for node in self.net:
       for e in eclipsed:
         eclipsed[e].discard(node)
-    print eclipsed
-  def locked_obstacles(self):
-    """Return a lit of all obstacles that are still locked."""
+    return eclipsed
+  def locked_obstacles(self, potential=True):
+    """Return a list of all obstacles that are still locked.
+    These are potential obstacles to look at placing.
+    By default, it will only show those that don't require
+    locked abilities. (potential=True)
+    """
     locked = {}
     for o in self.obstacles.keys():
-      locked[o] = self.nodes[o].reqs
+      locked[o] = set(self.nodes[o].reqs)
     for enabled in self.enabled_nodes('start'):
       locked.pop(enabled, None)
-    for enabled in self.enabled_nodes('start'):
+    # TODO: if something only requires an eclipsed
+    for enabled in self.net:
       for l in locked:
         locked[l].discard(enabled)
-    print locked
+    if potential:
+      eclipsed = self.locked_abilities()
+      unreasonable = set()
+      for l in locked:
+        requires_locked = [req in eclipsed for req in locked[l]]
+        if all(requires_locked) and len(requires_locked) > 0:
+          unreasonable.add(l)
+      for l in unreasonable:
+        locked.pop(l, None)
+    return locked
   def compare(self, ability1, ability2):
     """Show the overlap and non-overlap between the
     obstacles that are defeated by two abilities.
@@ -188,7 +201,41 @@ class Network(object):
     print 'overlap:'
     print overlap
     print 'non overlap:'
-    print nonoverlap
+    return nonoverlap
+  def active_abilities(self):
+    """Print all the active abilities in the net"""
+    print [node for node in net.abilities if net.abilities[node].placed]
+  def active_obstacles(self):
+    """Print all the active obstacles in the net"""
+    print [node for node in net.obstacles if net.obstacles[node].placed]
+  def unlocked_obstacles(self):
+    """Print all of the obstacles that can be placed."""
+    unlocked = set()
+    for node in self.net:
+      for enabled in self.enabled_nodes(node, suppress_live=True):
+        if enabled in self.obstacles:
+          unlocked.add(enabled)
+    return unlocked
+  def unlocked_abilities(self):
+    """Print all of the abilities that can be placed."""
+    unlocked = set()
+    for node in self.net:
+      for enabled in self.enabled_nodes(node, suppress_live=True):
+        if enabled in self.abilities:
+          unlocked.add(enabled)
+    return unlocked
+  def required(self, node):
+    """What else needs to be placed in the graph before I
+    can place node?
+    """
+    assert node in self.nodes
+    reqs = self.nodes[node].reqs
+    active = set(self.net.keys())
+    unfilled = reqs - active
+    if len(unfilled) > 0:
+      print unfilled
+    else:
+      print "requirements for {} are satisfied already.".format(node)
 
   def nxgraph(self):
     """Return a NetworkX graph suitable for plotting"""
