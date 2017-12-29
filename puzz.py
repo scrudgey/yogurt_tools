@@ -289,7 +289,7 @@ class Network(object):
     new joint obstacle.
     """
     # get all abilities with more than one requirement
-    for ab in [n for n in self.abilities if len(self.nodes[n].reqs) > 1]:
+    for ab in [n for n in self.abilities if len(self.nodes[n].reqs) > 1 and n not in self.net]:
       # check that all of its requirements are already placed
       reqs_met = [req in self.net for req in self.nodes[ab].reqs]
       if all(reqs_met):
@@ -355,8 +355,8 @@ class Network(object):
     for key in self.net.keys():
         dl[key] = list(self.net[key])
     labels = [node for node in self.net]
-    return nx.Graph(dl)
-  def plot(self, spring=False):
+    return nx.DiGraph(dl)
+  def plot(self, spring=True):
     """Visualize the graph."""
     fig = plt.figure(figsize=(5, 5))
     ax = fig.add_axes([0.2, 0.2, 0.8, 0.8])
