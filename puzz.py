@@ -3,7 +3,9 @@
 Using graph theory to plan out the order of puzzles and abilities.
 """
 import networkx as nx
+import itertools
 import collections
+import copy
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
@@ -141,11 +143,11 @@ class Network(object):
     for obstacle in self.obstacles.values():
       if obstacle.enabled(placed_nodes):
         enableds[obstacle.name] = obstacle.enablers(placed_nodes)
-    if branch in self.obstacles:
-      for ability in self.abilities.values():
-        pastbranch = self.past(branch)
-        if ability.enabled(pastbranch):
-          enableds[ability.name] = ability.enablers(pastbranch)
+    # if branch in self.obstacles:
+    for ability in self.abilities.values():
+      pastbranch = self.past(branch)
+      if ability.enabled(pastbranch):
+        enableds[ability.name] = ability.enablers(pastbranch)
     if suppress_live:
       placed_nodes = [node for node in enableds if self.nodes[node].placed]
       for node in placed_nodes:
@@ -154,16 +156,23 @@ class Network(object):
   def locked_abilities(self):
     """Return a list of all abilities that are still
     eclipsed.
+    Recall that all of the requirements of a given ability
+    must be in its immediate past.
     """
     eclipsed = {}
+    # a dictionary like node: requirements
     for a in self.abilities.keys():
       eclipsed[a] = set(self.nodes[a].reqs)
+    # remove all enabled nodes
     for node in self.net:
       for enabled in self.enabled_nodes(node):
         eclipsed.pop(enabled, None)
-    for node in self.net:
-      for e in eclipsed:
-        eclipsed[e].discard(node)
+    for a in eclipsed.keys():
+      for node in self.net:
+        past = self.past(node)
+        reqs_met = [req in past for req in self.nodes[a].reqs]
+        if all(reqs_met):
+          eclipsed.pop(a, None)
     return eclipsed
   def locked_obstacles(self, potential=True):
     """Return a list of all obstacles that are still locked.
@@ -176,7 +185,8 @@ class Network(object):
       locked[o] = set(self.nodes[o].reqs)
     for enabled in self.enabled_nodes('start'):
       locked.pop(enabled, None)
-    # TODO: if something only requires an eclipsed
+    # TODO: if something only requires an eclipsed ability,
+    # then it is unlocked for the net in general if not start specifically
     for enabled in self.net:
       for l in locked:
         locked[l].discard(enabled)
@@ -201,7 +211,7 @@ class Network(object):
     print 'overlap:'
     print overlap
     print 'non overlap:'
-    return nonoverlap
+    print nonoverlap
   def active_abilities(self):
     """Print all the active abilities in the net"""
     print [node for node in net.abilities if net.abilities[node].placed]
@@ -224,6 +234,13 @@ class Network(object):
         if enabled in self.abilities:
           unlocked.add(enabled)
     return unlocked
+  def unlocked(self):
+    """Print all of the nodes that can be placed."""
+    return self.unlocked_abilities().union(self.unlocked_obstacles())
+  def locked(self):
+    """Print all of the nodes that can't be placed."""
+    la = set(self.locked_abilities().keys())
+    return la.union(self.locked_obstacles())
   def required(self, node):
     """What else needs to be placed in the graph before I
     can place node?
@@ -236,6 +253,101 @@ class Network(object):
       print unfilled
     else:
       print "requirements for {} are satisfied already.".format(node)
+  def speculate(self, ability, after='start'):
+    """If I unlock ability, what new nodes are unlocked?"""
+    new_net = copy.deepcopy(self)
+    if len(self.nodes[ability].reqs) > 0:
+      for node in self.net:
+        pastbranch = self.past(node)
+        if self.nodes[ability].enabled(pastbranch):
+          after = node
+          break
+    new_net.add_connection(after, ability)
+
+    old = self.unlocked().union(set(self.net.keys()))
+    new = new_net.unlocked().union(set(new_net.net.keys()))
+    return new - old
+    # TODO: smarter exception handling here, suggest
+    # where to place the node if it is eclipsed, for example
+  def joint_obstacle(self, ability):
+    """For ability that eclipses more than one other ability,
+    determine a set of possible signatures for a joint obstacle
+    that would enable ability in its future.
+    """
+    assert ability in self.abilities
+    for req in self.nodes[ability].reqs:
+      assert req in self.net
+    sets = {r: set() for r in self.nodes[ability].reqs}
+    for req in self.nodes[ability].reqs:
+      sets[req].add(req)
+      for node in self.net:
+        if req in self.past(node):
+          sets[req].add(node)
+    return list(itertools.product(*sets.values()))
+  def new_obstacles(self):
+    """Determine which abilities indicate the need for a
+    new joint obstacle.
+    """
+    # get all abilities with more than one requirement
+    for ab in [n for n in self.abilities if len(self.nodes[n].reqs) > 1]:
+      # check that all of its requirements are already placed
+      reqs_met = [req in self.net for req in self.nodes[ab].reqs]
+      if all(reqs_met):
+        sets = self.joint_obstacle(ab)
+        print '{} requires a joint obstacle, possibly with the following requirements:'.format(ab)
+        for joint in sets:
+          print joint
+        print '\n'
+      else:
+        print '{} has multi requirements that are not yet placed\n'.format(ab)
+    for ob in self.locked_obstacles():
+      for req in self.nodes[ob].reqs:
+        if isinstance(req, tuple):
+          print 'or consider using {}: {}'.format(ob, req)
+  def place_next(self):
+    """Describe which things cane be placed next and what they
+    would unlock.
+    """
+    # (unlocked) node A can be placed after B or C, and would unlock D, E, and F
+    for ob in self.unlocked_obstacles():
+      print 'obstacle {} can be placed anywhere'.format(ob)
+      results = self.speculate(ob)
+      if len(results) > 0:
+        print ' and would unlock {}'.format(results)
+      print '\n'
+    for ab in self.unlocked_abilities():
+      print 'ability {} can be placed '.format(ab)
+      if len(self.nodes[ab].reqs) > 0:
+        possible_spots = []
+        for node in self.net:
+          pastbranch = self.past(node)
+          if self.nodes[ab].enabled(pastbranch):
+            possible_spots.append(node)
+        print 'after {}'.format(possible_spots)
+      else:
+        print 'anywhere'
+      results = self.speculate(ab)
+      if len(results) > 0:
+        print ' and would unlock {}'.format(results)
+      print '\n'
+  def analyze(self):
+    # locked abilities & locked obstacles
+    # place next analysis: (unlocked) node A can be placed after B or C, and would unlock D, E, and F
+    # required joint obstacles
+    print 'LOCKED ABILITIES:\n'
+    locked_abilities = self.locked_abilities()
+    for key in locked_abilities:
+      print '{}: {}'.format(key, locked_abilities[key])
+    print '\n'
+    print 'LOCKED OBSTACLES:\n'
+    locked_obstacles = self.locked_obstacles()
+    for key in locked_obstacles:
+      print '{}: {}'.format(key, locked_obstacles[key])
+    print '\n'
+    print 'PLACE NEXT:\n'
+    self.place_next()
+    print 'JOINT OBSTACLE ANALYSIS:\n'
+    self.new_obstacles()
 
   def nxgraph(self):
     """Return a NetworkX graph suitable for plotting"""
