@@ -356,6 +356,11 @@ class Network(object):
         dl[key] = list(self.net[key])
     labels = [node for node in self.net]
     return nx.DiGraph(dl)
+  def draw(self, name):
+    """Use graphviz to draw an image file."""
+    G = self.nxgraph()
+    A = nx.nx_agraph.to_agraph(G)
+    A.draw(name, prog='fdp')
   def plot(self, spring=True):
     """Visualize the graph."""
     fig = plt.figure(figsize=(5, 5))
