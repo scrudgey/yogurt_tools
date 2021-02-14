@@ -1,0 +1,137 @@
+4f530db5-e405-429c-b748-b1579c3caf2f;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+4f530db5-e405-429c-b748-b1579c3caf2f;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+37423cef-b3ce-4c98-a283-1662a07bdf2d;dialogue;0;0;0;0;1;test said Yummy!
+37423cef-b3ce-4c98-a283-1662a07bdf2d;dialogue;0;0;0;0;1;test said Yummy!
+8422a616-26d3-420c-89b5-780d2ac08152;eating;0;0;0;0;0;test drank yogurt
+8422a616-26d3-420c-89b5-780d2ac08152;yogurt eating;0;0;0;0;1;test ate yogurt
+8422a616-26d3-420c-89b5-780d2ac08152;eating;0;0;0;0;0;test drank yogurt
+8422a616-26d3-420c-89b5-780d2ac08152;yogurt eating;0;0;0;0;1;test ate yogurt
+8b3c63c3-b4fc-458a-8bce-90df98d97360;collision;0;0;1;0;0;Tom collided with yogurt
+27ec9195-c1c1-462e-b3a5-58e98f1cf9eb;spilling;0;1;1;0;0;yogurt was spilled
+7749b884-1d55-4f86-bc5f-51d86e135682;dialogue;0;0;0;0;0;test said How gross!
+7749b884-1d55-4f86-bc5f-51d86e135682;dialogue;0;0;0;0;0;test said How gross!
+5f238a40-1416-436d-87ff-f44466afb764;staining;0;1;1;0;0;yogurt stained test
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+cf8fa358-abda-451d-aa5d-dcb2eb137dae;collision;0;0;1;0;0;Tom collided with droplet
+e659206b-25b4-4f0b-b1b6-823dad4b7da8;spilling;0;1;1;0;0;yogurt was spilled
+7a6fec61-0a6d-4a19-9ddc-c2595879bd14;spilling;0;1;1;0;0;yogurt was spilled
+56e50772-101e-4ba1-9e4e-862dbc5e824d;eating;0;2;2;0;0;test drank yogurt
+56e50772-101e-4ba1-9e4e-862dbc5e824d;yogurt eating;0;0;0;0;1;test ate yogurt
+56e50772-101e-4ba1-9e4e-862dbc5e824d;eating;0;2;2;0;0;test drank yogurt
+56e50772-101e-4ba1-9e4e-862dbc5e824d;yogurt eating;0;0;0;0;1;test ate yogurt
+69d1c8e4-66e0-4160-8b97-bb5bbcf67ca0;dialogue;0;0;0;0;-1;test said Yuck
+69d1c8e4-66e0-4160-8b97-bb5bbcf67ca0;dialogue;0;0;0;0;-1;test said Yuck
+d97d5170-82bb-4fde-ad3a-987d04ebdc84;dialogue;0;0;0;0;0;Neville said How gross!
+d97d5170-82bb-4fde-ad3a-987d04ebdc84;dialogue;0;0;0;0;0;Neville said How gross!
+b0f8389d-fc2f-4f06-9449-09f4a74a2ba6;dialogue;0;0;0;0;-1;test said Yuck
+76ce0711-166f-472b-8504-0362ff817086;eating;0;2;2;0;0;test drank yogurt
+76ce0711-166f-472b-8504-0362ff817086;yogurt eating;0;0;0;0;1;test ate yogurt
+76ce0711-166f-472b-8504-0362ff817086;eating;0;2;2;0;0;test drank yogurt
+76ce0711-166f-472b-8504-0362ff817086;yogurt eating;0;0;0;0;1;test ate yogurt
+b0f8389d-fc2f-4f06-9449-09f4a74a2ba6;dialogue;0;0;0;0;-1;test said Yuck
+2a48ace4-d529-4bc7-9ef6-c49432e1f570;eating;0;2;2;0;0;test drank yogurt
+2a48ace4-d529-4bc7-9ef6-c49432e1f570;yogurt eating;0;0;0;0;1;test ate yogurt
+2a48ace4-d529-4bc7-9ef6-c49432e1f570;eating;0;2;2;0;0;test drank yogurt
+2a48ace4-d529-4bc7-9ef6-c49432e1f570;yogurt eating;0;0;0;0;1;test ate yogurt
+b0cdaef7-006f-476d-8592-8791992d1dea;dialogue;0;0;0;0;-1;test said Yuck
+b0cdaef7-006f-476d-8592-8791992d1dea;dialogue;0;0;0;0;-1;test said Yuck
+b82b6d0c-42e8-4cf5-81c1-deba5785af8f;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of yogurt
+b82b6d0c-42e8-4cf5-81c1-deba5785af8f;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+b82b6d0c-42e8-4cf5-81c1-deba5785af8f;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of yogurt
+b82b6d0c-42e8-4cf5-81c1-deba5785af8f;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+d62fa88f-61c6-4095-aee9-0598bbddce3d;dialogue;0;0;0;0;0;Neville said Whoah!
+cc936c57-a812-4c4c-af50-59fd0e6bca9d;dialogue;0;0;0;0;0;Neville said How gross!
+cc936c57-a812-4c4c-af50-59fd0e6bca9d;dialogue;0;0;0;0;0;Neville said How gross!
+d62fa88f-61c6-4095-aee9-0598bbddce3d;dialogue;0;0;0;0;0;Neville said Whoah!
+3fbc4832-b80e-4fd0-9e66-3299e5c73c27;spilling;0;1;1;0;0;vomit was spilled
+eea9530c-801e-4b91-8aa8-a0d31a381f82;spilling;0;1;1;0;0;yogurt was spilled
+8bd8dee5-db88-4570-9783-55a08dab98db;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+8bd8dee5-db88-4570-9783-55a08dab98db;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+5b55d6bf-791c-4e58-89a2-49fc4e292ba9;dialogue;1;0;1;0;-1;Neville said I don't feel so good!!
+5b55d6bf-791c-4e58-89a2-49fc4e292ba9;dialogue;1;0;1;0;-1;Neville said I don't feel so good!!
+b7130412-5c16-471e-a70a-42628d607489;eating;0;2;2;0;0;test drank vomit
+b7130412-5c16-471e-a70a-42628d607489;eating vomit;2;2;2;0;0;test ate vomit
+b7130412-5c16-471e-a70a-42628d607489;eating;0;2;2;0;0;test drank vomit
+b7130412-5c16-471e-a70a-42628d607489;eating vomit;2;2;2;0;0;test ate vomit
+92c9d84b-63ff-4750-897c-dd5ea35fbb4b;dialogue;0;0;0;0;-1;test said Yuck
+92c9d84b-63ff-4750-897c-dd5ea35fbb4b;dialogue;0;0;0;0;-1;test said Yuck
+7fc12394-7847-4e67-a6e4-42c4f4109bcf;dialogue;0;0;0;0;-1;test said Yuck
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating;0;2;2;0;0;test drank yogurt
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating vomit;2;2;2;0;0;test ate vomit
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;yogurt eating;0;0;0;0;1;test ate yogurt
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating vomited-up yogurt;2;2;2;0;-1;test ate vomited-up yogurt
+7fc12394-7847-4e67-a6e4-42c4f4109bcf;dialogue;0;0;0;0;-1;test said Yuck
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating;0;2;2;0;0;test drank yogurt
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating vomit;2;2;2;0;0;test ate vomit
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;yogurt eating;0;0;0;0;1;test ate yogurt
+ff712ab3-6ad9-416e-b8c1-9d4cb63ec8b5;eating vomited-up yogurt;2;2;2;0;-1;test ate vomited-up yogurt
+57305633-b66d-4e0d-831d-ddc27d3f5074;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+8f00a372-49fc-4e66-979f-84940cebcb04;dialogue;0;0;0;0;0;Neville said Disgusting!
+8f00a372-49fc-4e66-979f-84940cebcb04;dialogue;0;0;0;0;0;Neville said Disgusting!
+615ec853-b068-4a47-a000-7b15c39f697f;dialogue;0;0;0;0;0;Neville said What the hell?!
+615ec853-b068-4a47-a000-7b15c39f697f;dialogue;0;0;0;0;0;Neville said What the hell?!
+57305633-b66d-4e0d-831d-ddc27d3f5074;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+b9f82b78-8efd-4822-b22b-b8a25a765dda;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of vomit
+b9f82b78-8efd-4822-b22b-b8a25a765dda;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of vomit
+4cdf76c6-2128-4397-a223-4b650ed2fd08;vomiting;1;2;1;0;0;Neville vomited up 
+4cdf76c6-2128-4397-a223-4b650ed2fd08;vomiting;1;2;1;0;0;Neville vomited up 
+bdb75faf-f023-4f80-a486-1640900a21ea;spilling;0;1;1;0;0;vomit was spilled
+582cec80-7214-4b97-b17a-886f232ec9c4;spilling;0;1;1;0;0;vomit was spilled
+af4ed728-9520-4e36-91b9-28d82e2b7c0c;spilling;0;1;1;0;0;vomit was spilled
+e9dca751-ff54-436f-b499-5a4443335c14;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+e9dca751-ff54-436f-b499-5a4443335c14;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+f78daf80-87ce-46ce-8dd0-529fdb00ae93;dialogue;0;0;0;0;0;Neville said Blaaaaargh!
+f78daf80-87ce-46ce-8dd0-529fdb00ae93;dialogue;0;0;0;0;0;Neville said Blaaaaargh!
+c22a5fa5-8a37-4099-825d-b8e6be1c0b86;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of yogurt
+c22a5fa5-8a37-4099-825d-b8e6be1c0b86;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+c22a5fa5-8a37-4099-825d-b8e6be1c0b86;vomiting;1;2;1;0;0;test vomited up vomited-up puddle of yogurt
+c22a5fa5-8a37-4099-825d-b8e6be1c0b86;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+d3180bc6-82a3-406b-9038-7d6f48f3874a;spilling;0;1;1;0;0;vomit was spilled
+d82f3d1c-d350-4e4d-b9ec-77dbf02ee45f;spilling;0;1;1;0;0;yogurt was spilled
+b243a157-9ae2-44f8-b450-a6cae4fe1cde;dialogue;0;0;0;0;0;test said Blaaaaargh!
+92aee6ef-2536-4a65-b946-baace325c902;vomiting;1;2;1;0;0;test vomited up 
+b243a157-9ae2-44f8-b450-a6cae4fe1cde;dialogue;0;0;0;0;0;test said Blaaaaargh!
+92aee6ef-2536-4a65-b946-baace325c902;vomiting;1;2;1;0;0;test vomited up 
+aa691f69-0281-4f61-8bf1-f09f8b159545;dialogue;1;0;1;0;-1;Neville said I don't feel so good!!
+aa691f69-0281-4f61-8bf1-f09f8b159545;dialogue;1;0;1;0;-1;Neville said I don't feel so good!!
+d4ab86e7-c53c-4745-bab6-70e039c5712d;spilling;0;1;1;0;0;vomit was spilled
+b0aafbc8-6cb8-4c3b-8d98-02488688e2a1;vomiting;1;2;1;0;0;test vomited up 
+b0aafbc8-6cb8-4c3b-8d98-02488688e2a1;vomiting;1;2;1;0;0;test vomited up 
+1e67a0c5-3e72-4337-b71d-fa8e16c65447;dialogue;0;0;0;0;0;test said Blaaaaargh!
+1e67a0c5-3e72-4337-b71d-fa8e16c65447;dialogue;0;0;0;0;0;test said Blaaaaargh!
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw vomited-up stain
+7e4f8071-32a7-486f-8b1a-f04c6cce0ea4;staining;0;3;3;0;0;vomit stained Neville
+b627e806-fd28-4d91-ba09-6405dcef89ec;spilling;0;1;1;0;0;vomit was spilled
+22d1d028-12ac-42fd-8723-e5d47b5165d9;dialogue;0;0;0;0;0;test said Blaaaaargh!
+6050a58f-4deb-4cf8-b81f-7efa7e5fd339;vomiting;1;2;1;0;0;test vomited up 
+22d1d028-12ac-42fd-8723-e5d47b5165d9;dialogue;0;0;0;0;0;test said Blaaaaargh!
+6050a58f-4deb-4cf8-b81f-7efa7e5fd339;vomiting;1;2;1;0;0;test vomited up 
+8e921f8f-22e5-4196-b588-916acafc0c90;collision;0;0;1;0;0;Neville collided with droplet
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw vomited-up stain
+ca4b8a9d-24c5-4add-828a-50726d2c8209;staining;0;3;3;0;0;vomit stained Neville
+0a94e478-4eb4-4914-9277-da08bbf3ff6b;dialogue;0;0;0;0;0;Neville said How gross!
+0a94e478-4eb4-4914-9277-da08bbf3ff6b;dialogue;0;0;0;0;0;Neville said How gross!
+50671a15-09fd-4eee-9403-b4e6527fc5e6;vomiting;1;2;1;0;0;Neville vomited up 
+50671a15-09fd-4eee-9403-b4e6527fc5e6;vomiting;1;2;1;0;0;Neville vomited up 
+00b1be06-aa0c-4dd6-b498-8024be976303;collision;0;0;1;0;0;Tom collided with droplet
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw vomited-up stain
+f1fc128d-6db3-495d-bb2a-30f40f8348c8;staining;0;3;3;0;0;vomit stained test
+d2559acc-66a7-40a5-af43-8d7dab2607f1;spilling;0;1;1;0;0;vomit was spilled
+b30fb527-25d7-46bd-9f48-2003bd681249;spilling;0;1;1;0;0;vomit was spilled
+75998601-ab72-44cc-8d76-a81e1bf11545;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+325bf3a7-bc2b-4708-a56d-6989c867a997;dialogue;0;0;0;0;0;test said Blaaaaargh!
+325bf3a7-bc2b-4708-a56d-6989c867a997;dialogue;0;0;0;0;0;test said Blaaaaargh!
+75998601-ab72-44cc-8d76-a81e1bf11545;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+82743df7-41a1-4f09-a1dd-554b6cb926b3;dialogue;0;0;0;0;0;test said Blaaaaargh!
+82743df7-41a1-4f09-a1dd-554b6cb926b3;dialogue;0;0;0;0;0;test said Blaaaaargh!
+086bb451-7c76-4ed0-9a53-55deee9f36e1;vomiting;1;2;1;0;0;test vomited up 
+086bb451-7c76-4ed0-9a53-55deee9f36e1;vomiting;1;2;1;0;0;test vomited up 
+2f483b4f-e3df-4c92-b954-ffa007faad5c;spilling;0;1;1;0;0;vomit was spilled
+7a96213e-de88-4504-aed4-9c558945f6cd;eating;0;2;2;0;0;test drank vomit
+7a96213e-de88-4504-aed4-9c558945f6cd;eating vomit;2;2;2;0;0;test ate vomit
+7a96213e-de88-4504-aed4-9c558945f6cd;eating;0;2;2;0;0;test drank vomit
+7a96213e-de88-4504-aed4-9c558945f6cd;eating vomit;2;2;2;0;0;test ate vomit
+1e538208-5192-4c09-9c6c-3ab4d12f1da1;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+1e538208-5192-4c09-9c6c-3ab4d12f1da1;dialogue;1;0;2;0;-2;Neville said I'm gonna puke!
+dd5c3392-5730-40b0-b189-4e24e2b90dc2;dialogue;0;0;0;0;-1;test said Yuck
+dd5c3392-5730-40b0-b189-4e24e2b90dc2;dialogue;0;0;0;0;-1;test said Yuck

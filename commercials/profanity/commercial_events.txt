@@ -1,0 +1,36 @@
+e2c897e4-0fa6-4d34-9535-c99e752b0916;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+e2c897e4-0fa6-4d34-9535-c99e752b0916;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+a2a969fe-484b-49dd-8e23-9995910850c1;dialogue;0;0;0;0;1;test said Yummy!
+a2a969fe-484b-49dd-8e23-9995910850c1;dialogue;0;0;0;0;1;test said Yummy!
+523b1858-8ea3-4320-840c-98fa7a56973b;eating;0;0;0;0;0;test drank yogurt
+523b1858-8ea3-4320-840c-98fa7a56973b;yogurt eating;0;0;0;0;1;test ate yogurt
+523b1858-8ea3-4320-840c-98fa7a56973b;eating;0;0;0;0;0;test drank yogurt
+523b1858-8ea3-4320-840c-98fa7a56973b;yogurt eating;0;0;0;0;1;test ate yogurt
+a39c86bf-e4bd-4553-a5a0-96c74cf83ac5;violence;2;0;2;0;0;Neville attacked test
+78c69b48-524c-4808-a031-de90727525f6;dialogue;0;0;0;0;0;test said A wiseguy, eh?
+a39c86bf-e4bd-4553-a5a0-96c74cf83ac5;violence;2;0;2;0;0;Neville attacked test
+78c69b48-524c-4808-a031-de90727525f6;dialogue;0;0;0;0;0;test said A wiseguy, eh?
+9cc8c6d6-28d0-440c-85bb-415b278a4ba2;violence;2;0;2;0;0;Neville attacked test
+9cc8c6d6-28d0-440c-85bb-415b278a4ba2;violence;2;0;2;0;0;Neville attacked test
+d9244cf4-d9b6-4c98-81b7-df04acd1841b;profanity;0;0;14;35;0;test said ∎∎∎∎∎∎∎!
+d9244cf4-d9b6-4c98-81b7-df04acd1841b;profanity;0;0;14;35;0;test said ∎∎∎∎∎∎∎!
+d3e63059-db2e-47b1-961b-6ac790b2d097;dialogue;0;0;0;0;0;Neville said Hey!
+d3e63059-db2e-47b1-961b-6ac790b2d097;dialogue;0;0;0;0;0;Neville said Hey!
+e7d4b846-58aa-47f7-9769-ae0bc4f71993;violence;2;0;2;0;0;Neville attacked test
+e7d4b846-58aa-47f7-9769-ae0bc4f71993;violence;2;0;2;0;0;Neville attacked test
+1d512bb6-c06b-4e74-8e7b-df77c1224864;dialogue;1;0;2;2;-2;test said you clown-fucking  trifling pickle. 
+1d512bb6-c06b-4e74-8e7b-df77c1224864;dialogue;1;0;2;2;-2;test said you clown-fucking  trifling pickle. 
+520bb975-67b7-4e17-ab81-802357236819;profanity;0;0;14;35;0;test said ∎∎∎∎∎∎∎!
+520bb975-67b7-4e17-ab81-802357236819;profanity;0;0;14;35;0;test said ∎∎∎∎∎∎∎!
+159d99e6-b28f-476d-912b-26bdefcddc85;dialogue;0;0;0;0;0;Neville said Yikes!
+159d99e6-b28f-476d-912b-26bdefcddc85;dialogue;0;0;0;0;0;Neville said Yikes!
+6415592c-fad2-4863-a19a-a84e5dfe412d;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ yogurt cup!
+a3b2344d-0ea6-4a5b-8165-7e9a3e0570a4;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ Neville!
+6415592c-fad2-4863-a19a-a84e5dfe412d;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ yogurt cup!
+a3b2344d-0ea6-4a5b-8165-7e9a3e0570a4;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ Neville!
+7f422344-c6fe-4678-8c06-571bcbec4ba8;dialogue;0;0;0;0;0;Neville said Whoah!
+7f422344-c6fe-4678-8c06-571bcbec4ba8;dialogue;0;0;0;0;0;Neville said Whoah!
+93f528b2-dd47-4530-9721-ca18a9f6fd55;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ Neville!
+93f528b2-dd47-4530-9721-ca18a9f6fd55;profanity;0;0;22;55;0;test said that ∎∎∎∎∎∎∎∎∎∎∎ Neville!
+51a0094b-ce71-4d58-9034-a75a044dda1f;profanity;1;0;10;22;-2;test said what graveyard are you on your way to rob? eat a ∎∎∎∎, Oh look, the local bottom-feeding dumpster fire 
+51a0094b-ce71-4d58-9034-a75a044dda1f;profanity;1;0;10;22;-2;test said what graveyard are you on your way to rob? eat a ∎∎∎∎, Oh look, the local bottom-feeding dumpster fire 

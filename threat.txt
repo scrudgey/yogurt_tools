@@ -1,0 +1,334 @@
+#p
+.
+!
+!
+!!
+!!!
+
+#threat
+<0.5|{threat-intro} >{threat-sentence}<0.2| {threat-sentence}><0.5| {intensifier}>
+
+#threat-sentence
+{threat-start} {action}<0.5| and {action}>{p}
+{admire} {admire-threat}
+I have {done}{p}
+
+#action
+{crush} your {bodypart}<0.25| {and-do-with-it}>
+{abuse} you<0.5| {about}><0.5| {similie}><0.5| {and-finish-off}>
+
+#and-finish-off
+and {dispose-of} your body in {dump}
+and leave you in a ditch
+
+#abuse
+whip
+beat
+pummel
+murder
+
+#about
+{adverb}
+about the head and face
+<0.5|{adverb} and >without mercy
+
+
+#similie
+like a {bad-animal}
+like you deserve
+like a {insult-adjective} {insult-type}
+
+#bad-animal
+<0.75|{bad-animal-adj} >{bad-animal-type}
+
+#bad-animal-adj
+lame
+mangy
+dead
+
+#bad-animal-type
+dog
+swine
+horse
+
+
+#done
+been stalking you
+hired someone to kill you
+always wanted to {crush} your {bodypart}<0.25| {and-do-with-it}>
+been digging through your trash
+read your email
+stolen your credit card information
+devised a trap to ensare you
+plotted your undoing
+ensured your demise
+condemned you to a slow death
+powerfully consigned you unto death
+been waiting for this moment
+
+
+#crush
+<0.25|{adverb} >{threat-verb}<0.25| and {threat-verb}>
+
+
+#hypothetical-bad-thing
+you woke up one day to find it {broken}<0.5| {and-verbed}>
+you lost it in an "accident"
+it were {verbed}<0.5| {and-verbed}>
+I {crush} it<0.5| {and-do-with-it}>
+
+#threat-start
+I am going to 
+Time to
+Here I come to
+I plan to
+How about I
+What if I were to
+I am here to
+I want to
+
+#adverb
+forcefully
+bodily
+slowly
+swiftly
+brutally
+mercilessly
+permanently
+powerfully
+
+#threat-intro
+{i-am} {monicker}.
+Do you recognize {monicker}<0.2| when you see it>?
+You can't stop me!
+Ha ha {ha}!
+You {insult-adjective} {insult-type}!
+Are you afraid?
+You are trembling!
+
+#insult-adjective
+pitiful
+detestable
+churlish
+reedy
+tiny little
+wimpy
+scornful
+insignificant
+
+#insult-type
+fool
+clown
+weakling
+simp
+baby
+ass child
+ass baby
+goon
+oaf
+gong farmer
+
+#ha
+ha
+ha {ha}
+ha {ha}
+
+#i-am
+I am known as
+They call me
+You know me as
+Some call me
+Here comes
+I am
+
+#monicker
+the {bodypart} {verber}
+the <0.5|{animal-adj} >{animal}
+your {reckoning}
+
+#reckoning
+reckoning
+nemesis
+killer
+{bodypart} {verber}
+
+#animal
+jackal
+panther
+puma
+tiger
+raptor
+ghost
+angel of death
+night train
+{karate} master
+
+#karate
+karate
+judo
+kung-fu
+
+#animal-adj
+ferocious
+silent
+bloody
+lethal
+enormous
+deadly
+
+#intensifier
+Don't test me, {gender}.
+I mean it!
+Watch out!
+And that's a threat!
+{i-am} {monicker}!
+Just try and stop me!
+Bow before me!
+Flee! Flee, you coward!
+I weep for your future!
+I laugh at your {cowardice}!
+You {insult-adjective} {insult-type}!
+Ha ha {ha}{p}
+
+#cowardice
+cowardice
+weakness
+{insult-adjective} {bodypart}
+
+
+#threat-verb
+stomp
+crush
+rip off
+incinerate
+eviscerate
+mangle
+bruise
+disfigure
+break
+bash
+
+
+#verber
+crusher
+smasher
+killer
+mangler
+remover
+silencer
+
+#threat-noun
+{bodypart}
+problem
+nuisance
+foe
+enemy
+
+#bodypart
+uvula
+head
+pinky toe
+arm
+leg
+face
+heart
+hand
+fingernail
+ear lobe
+eyeball
+achilles tendon
+
+#broken
+covered in obscene sharpie messages
+missing
+{verbed}
+
+#admire
+That's a nice {bodypart}.
+How's your {bodypart}?
+I like your {bodypart}.
+What a {insult-adjective} {bodypart}!
+
+
+#verbed
+crushed
+lost
+removed from your person
+mangled
+disfigured
+
+#admire-threat
+{threat-start} {crush} it<0.5| {and-do-with-it}>{p}
+{shame-if} {hypothetical-bad-thing}{p}
+{i-dont-have-to} {crush} it<0.5| {and-do-with-it}>{p}
+
+#shame-if
+It would be a shame if
+I wonder what would happen if
+What would you do if
+
+#i-dont-have-to
+I hope I don't have to
+I have half a mind to
+I will
+
+
+#and-do-with-it
+and wave it around over my head
+and throw it to the wolves
+and bury it {number} feet deep
+and sell it on ebay
+and {brandish-it} at shocked onlookers
+and mount it above my fireplace
+and scatter it to the winds
+and {dispose-of} it in {dump}
+
+#brandish-it
+brandish it
+hurl it
+toss it
+wave it
+
+#dispose-of
+dispose of
+dump
+toss
+chuck
+
+#disposed-of
+disposed of
+dumped
+tossed
+chucked
+lost
+
+#and-verbed
+and {disposed-of} in {dump}
+and shot into space
+and <0.5|{adverb} >{verbed}
+
+#dump
+the waste basket
+a shallow grave
+the ocean
+the municipal dump
+the {factory} factory
+a deep pit
+a ditch
+a trash compactor
+an incinerator
+an open manhole
+
+
+#factory
+yo-yo
+breakfast cereal
+ground beef
+pencil
+
+#number
+six
+ten
+nine
+seven
+a hundred

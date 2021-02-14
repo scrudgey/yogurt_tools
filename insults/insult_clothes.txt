@@ -1,0 +1,28 @@
+#insult
+Your shirt look like a dishrag
+That {target-clothes} looks like something {bad-person} would wear
+Still robbing graveyards for that {target-clothes-plural}, I see
+Nice {target-clothes}
+It's not Halloween, take off the {target-clothes-plural}
+
+#intro
+Where did you get that {target-clothes}? At the {store-type} store<0.5| for {assholes}>?
+Are you on your way to a funeral or something?
+
+#store-type
+clown
+hitler
+trash picker
+kindergarten art sale
+
+#assholes
+assholes
+total fucking idiots
+clowns
+
+#bad-person
+my dead grandmother
+Hitler
+Mussolini
+a fancy robot
+

@@ -1,0 +1,37 @@
+87c525d6-3ae7-4603-8ecb-12680a14100e;dialogue;0;0;0;0;1;test said Yummy!
+87c525d6-3ae7-4603-8ecb-12680a14100e;dialogue;0;0;0;0;1;test said Yummy!
+cc0e2c88-7115-42da-8601-116dbacc74a2;eating;0;0;0;0;0;test drank yogurt
+cc0e2c88-7115-42da-8601-116dbacc74a2;yogurt eating;0;0;0;0;1;test ate yogurt
+cc0e2c88-7115-42da-8601-116dbacc74a2;eating;0;0;0;0;0;test drank yogurt
+cc0e2c88-7115-42da-8601-116dbacc74a2;yogurt eating;0;0;0;0;1;test ate yogurt
+c790d2ef-2134-462e-b525-e4af39173edb;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+c790d2ef-2134-462e-b525-e4af39173edb;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+c2c0f3bf-c151-4c19-afef-84d66a7f6bfe;violence;2;0;2;0;0;test stabbed Neville
+c2c0f3bf-c151-4c19-afef-84d66a7f6bfe;violence;2;0;2;0;0;test stabbed Neville
+dbb566e3-6776-4aab-a8f1-8c48ddf70dc4;violence;2;0;2;0;0;test stabbed yogurt cup
+dbb566e3-6776-4aab-a8f1-8c48ddf70dc4;violence;2;0;2;0;0;test stabbed yogurt cup
+ae891323-1889-489d-8c74-74c6c98a5fc4;collision;0;0;1;0;0;Neville collided with droplet
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+60249f67-2cc2-4b0a-ae9e-326f8dba69f7;staining;0;1;1;0;0;yogurt stained Neville
+914c8db0-b6f8-4ded-bb9c-a63ecaeddcc5;dialogue;0;0;0;0;0;test said Whoah!
+914c8db0-b6f8-4ded-bb9c-a63ecaeddcc5;dialogue;0;0;0;0;0;test said Whoah!
+d7d3c1ee-2eb3-481d-a317-06201b574448;dialogue;0;0;0;0;0;test said Oh, yuck!
+d7d3c1ee-2eb3-481d-a317-06201b574448;dialogue;0;0;0;0;0;test said Oh, yuck!
+d032f90c-a7fb-4ba9-bb1d-74b3c3e44397;spilling;0;1;1;0;0;blood was spilled
+09834a98-4c76-4fcd-97c8-85b216cc1ca0;spilling;0;1;1;0;0;yogurt was spilled
+83933f20-6178-462a-8518-e06a6ca2187c;violence;2;0;2;0;0;test stabbed Neville
+83933f20-6178-462a-8518-e06a6ca2187c;violence;2;0;2;0;0;test stabbed Neville
+7b5ceabb-78bb-4f95-8063-f332df10e142;violence;2;0;2;0;0;test stabbed droplet
+7b5ceabb-78bb-4f95-8063-f332df10e142;violence;2;0;2;0;0;test stabbed droplet
+49fb3509-6d05-46f6-b927-7b13113f8acd;spilling;0;1;1;0;0;yogurt was spilled
+ebe6e536-cd0e-4dd2-bf51-548361d18e78;spilling;0;1;1;0;0;blood was spilled
+d68a99fa-03fb-4567-8308-5524d58c53e4;violence;2;0;2;0;0;test stabbed Neville
+d68a99fa-03fb-4567-8308-5524d58c53e4;violence;2;0;2;0;0;test stabbed Neville
+e3048878-30ae-4cd8-b2d6-2764bebe238e;murder;4;3;4;4;-3;Neville was stabbed to death
+e3048878-30ae-4cd8-b2d6-2764bebe238e;murder;4;3;4;4;-3;Neville was stabbed to death
+fb7cfdd8-9241-4ce6-84f7-c4e9b79364f1;violence;2;0;2;0;0;test stabbed Neville
+fb7cfdd8-9241-4ce6-84f7-c4e9b79364f1;violence;2;0;2;0;0;test stabbed Neville
+35ae1d42-180c-4d51-b97f-c7da3a33994d;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+35ae1d42-180c-4d51-b97f-c7da3a33994d;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+3e283774-c013-4d8a-bd2f-76e22121a605;dialogue;0;0;0;0;0;test said Yikes!
+3e283774-c013-4d8a-bd2f-76e22121a605;dialogue;0;0;0;0;0;test said Yikes!

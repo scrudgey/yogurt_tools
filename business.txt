@@ -1,0 +1,128 @@
+#default
+{what}
+
+#what
+We are {doing}.
+
+#what-i-do
+I {goal}<0.5| {self-qualification}>.
+
+#doing
+{doing-main}<0.5| {doing-qualification}>
+
+#doing-main
+{buzz-doing}
+{business-doing}
+
+#doing-qualification
+to <0.5|{adverb-goal} >{goal}
+{timerange}
+
+#self-qualification
+in my role as {role}
+when I'm not {doing-main}
+
+#role
+<0.5|{role-adjective} ><0.25|{role-adjective} >{role-main}
+
+#role-main
+director
+advisor
+analyst
+president
+
+#role-adjective
+senior
+principal
+chief
+acting
+interim
+vice
+
+#buzz-doing
+{buzz-verb} <0.5|our >{buzz-noun}
+
+#business-doing
+{business-verb} our {business-noun}
+
+#timerange
+over the next few months
+for the foreseeable future
+for next year
+
+#business-verb
+rewriting
+reorganizing
+rethinking
+focus-grouping
+quantifying
+fact-checking
+auditing
+
+#business-noun
+mission statement
+org chart
+core process
+management structure
+corporate identity
+company culture
+
+#buzz-verb
+leveraging
+implementing
+utilizing
+siloing
+managing
+
+#buzz-noun
+synergy
+agile processes
+cryptocurrency
+business intelligence
+
+#adverb-goal
+successfully
+rapidly
+concurrently
+aggressively
+
+#goal
+{do} <0.5|our ><0.5|{adjective} >{goal-item}
+{verbize} <0.5|our ><0.5|{adjective} >{goal-item}
+
+#verbize
+utilize
+synergize with
+capitalize on
+solidify
+leverage
+activate
+
+#do
+achieve
+see
+incentivize
+productize
+contribute to
+quantify
+grow
+activate
+address
+
+#adjective
+virtual
+real
+future
+
+#goal-item
+synergy
+quarterly deliverables
+thought leadership
+quality
+positioning in the market
+goals
+corporate dna
+sales numbers
+market capitalization
+products
+customer base

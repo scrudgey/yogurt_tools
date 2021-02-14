@@ -1,0 +1,8 @@
+0237e212-2035-4d5c-a40b-b85f4afbf7b1;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+0237e212-2035-4d5c-a40b-b85f4afbf7b1;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+e71d7689-2f0a-483a-b288-adb282b7e67e;dialogue;0;0;0;0;1;test said Yummy!
+e71d7689-2f0a-483a-b288-adb282b7e67e;dialogue;0;0;0;0;1;test said Yummy!
+7867d95d-117b-49f6-9ff2-62c746231979;eating;0;0;0;0;0;test drank yogurt
+7867d95d-117b-49f6-9ff2-62c746231979;yogurt eating;0;0;0;0;1;test ate yogurt
+7867d95d-117b-49f6-9ff2-62c746231979;eating;0;0;0;0;0;test drank yogurt
+7867d95d-117b-49f6-9ff2-62c746231979;yogurt eating;0;0;0;0;1;test ate yogurt

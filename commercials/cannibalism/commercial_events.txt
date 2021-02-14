@@ -1,0 +1,184 @@
+e46762fc-05ad-4149-bd1e-a6eb298427b3;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+e46762fc-05ad-4149-bd1e-a6eb298427b3;dialogue;0;0;0;0;0;Neville said Bob Yogurt is so good, we bet a passer-by will really like it!
+eb9d3bf9-13d3-43bb-b9ee-128c9a6d4bf1;violence;2;0;2;0;0;test stabbed Neville
+eb9d3bf9-13d3-43bb-b9ee-128c9a6d4bf1;violence;2;0;2;0;0;test stabbed Neville
+ba58563a-bc8c-42eb-9ac7-dae3904f196d;violence;2;0;2;0;0;test stabbed droplet
+ba58563a-bc8c-42eb-9ac7-dae3904f196d;violence;2;0;2;0;0;test stabbed droplet
+d7f3cb54-3897-4743-806c-945be29c0693;violence;2;0;2;0;0;test stabbed Neville
+d7f3cb54-3897-4743-806c-945be29c0693;violence;2;0;2;0;0;test stabbed Neville
+304e2409-3d61-4f3f-a0cd-2f59f9c491c0;dialogue;0;0;0;0;0;Neville said Ouch!
+304e2409-3d61-4f3f-a0cd-2f59f9c491c0;dialogue;0;0;0;0;0;Neville said Ouch!
+48301907-7794-4dd3-960d-fc424f31a2d4;violence;2;0;2;0;0;test stabbed droplet
+48301907-7794-4dd3-960d-fc424f31a2d4;violence;2;0;2;0;0;test stabbed droplet
+827c9ccc-d251-43e8-82e8-b7aec311ea86;spilling;0;1;1;0;0;blood was spilled
+7345006a-ea8c-4a89-99e2-b30231ffce8d;spilling;0;1;1;0;0;blood was spilled
+c2258c5c-51dd-4b52-8448-dc5a8f3ecee7;violence;2;0;2;0;0;test stabbed Neville
+c2258c5c-51dd-4b52-8448-dc5a8f3ecee7;violence;2;0;2;0;0;test stabbed Neville
+99b1ab49-9909-4bf7-b648-8e6b8e8e9582;violence;2;0;2;0;0;test stabbed Neville
+99b1ab49-9909-4bf7-b648-8e6b8e8e9582;violence;2;0;2;0;0;test stabbed Neville
+8a6b4943-a77a-4acb-b9e8-3144beda7616;murder;4;3;4;4;-3;Neville was stabbed to death
+8a6b4943-a77a-4acb-b9e8-3144beda7616;murder;4;3;4;4;-3;Neville was stabbed to death
+aa39cffc-6398-4f99-954f-1adcf51c3fe7;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+aa39cffc-6398-4f99-954f-1adcf51c3fe7;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+1c68bd20-40f7-4919-93a5-295901ce5c60;violence;2;0;2;0;0;test stabbed Neville
+1c68bd20-40f7-4919-93a5-295901ce5c60;violence;2;0;2;0;0;test stabbed Neville
+554bd70e-ee00-401b-b3b6-52fefef98263;violence;2;0;2;0;0;test stabbed Neville
+554bd70e-ee00-401b-b3b6-52fefef98263;violence;2;0;2;0;0;test stabbed Neville
+81129ae9-c2b6-4921-8298-bb1fe9d832aa;violence;2;0;2;0;0;test stabbed Neville
+81129ae9-c2b6-4921-8298-bb1fe9d832aa;violence;2;0;2;0;0;test stabbed Neville
+665df01d-05a5-48a1-99f0-7b373d732e07;corpse desecration;4;4;3;-2;-2;the corpse of Neville was desecrated
+26846915-c41b-49f6-b0c4-8b0449eca285;violence;2;0;2;0;0;test stabbed arm(Clone) Ground
+26846915-c41b-49f6-b0c4-8b0449eca285;violence;2;0;2;0;0;test stabbed arm(Clone) Ground
+5231ffbe-4120-46ff-84fb-dbfe4ad321cc;violence;2;0;2;0;0;test stabbed leg(Clone) Ground
+5231ffbe-4120-46ff-84fb-dbfe4ad321cc;violence;2;0;2;0;0;test stabbed leg(Clone) Ground
+9bfcd27f-f365-438b-9b22-09f29f2440fe;violence;2;0;2;0;0;test stabbed leg(Clone) Ground
+9bfcd27f-f365-438b-9b22-09f29f2440fe;violence;2;0;2;0;0;test stabbed leg(Clone) Ground
+1fc1664e-3977-409e-a58d-b4ee8ee4d5d5;spilling;0;1;1;0;0;blood was spilled
+f65d0e04-e5fe-4b8c-8f5e-a6a26bc566f6;dialogue;0;0;0;0;0;test said Yikes!
+f65d0e04-e5fe-4b8c-8f5e-a6a26bc566f6;dialogue;0;0;0;0;0;test said Yikes!
+915e8dc3-ede8-4316-bd00-262f3e9f9cfe;violence;2;0;2;0;0;test stabbed arm
+915e8dc3-ede8-4316-bd00-262f3e9f9cfe;violence;2;0;2;0;0;test stabbed arm
+236cf829-2364-49f6-8e0b-eae6d141bcda;violence;2;0;2;0;0;test stabbed head
+3f6cc109-de81-4b17-a27e-51185fc5a1e0;violence;2;0;2;0;0;test stabbed leg
+3f6cc109-de81-4b17-a27e-51185fc5a1e0;violence;2;0;2;0;0;test stabbed leg
+236cf829-2364-49f6-8e0b-eae6d141bcda;violence;2;0;2;0;0;test stabbed head
+5a163173-8308-474b-826f-b9f0b9ff32bf;violence;2;0;2;0;0;test stabbed torso
+5a163173-8308-474b-826f-b9f0b9ff32bf;violence;2;0;2;0;0;test stabbed torso
+2372703f-e62d-4aff-a240-de3a6170c818;violence;2;0;2;0;0;test stabbed brain(Clone) Ground
+2372703f-e62d-4aff-a240-de3a6170c818;violence;2;0;2;0;0;test stabbed brain(Clone) Ground
+96aa436f-54c4-4924-be0b-f60cf0cfecc4;violence;2;0;2;0;0;test stabbed eyeball
+96aa436f-54c4-4924-be0b-f60cf0cfecc4;violence;2;0;2;0;0;test stabbed eyeball
+c8c34f7c-718f-49a9-85a6-7fbdc8965031;violence;2;0;2;0;0;test stabbed eyeball
+c8c34f7c-718f-49a9-85a6-7fbdc8965031;violence;2;0;2;0;0;test stabbed eyeball
+a70eb670-1dad-4f80-b196-30f56ca7632e;violence;2;0;2;0;0;test stabbed meat chunk
+a70eb670-1dad-4f80-b196-30f56ca7632e;violence;2;0;2;0;0;test stabbed meat chunk
+2c8fc13f-6b2f-4b99-8f65-f7e4ad28f4df;vomiting;1;2;1;0;0;test vomited up 
+2c8fc13f-6b2f-4b99-8f65-f7e4ad28f4df;vomiting;1;2;1;0;0;test vomited up 
+775ce037-790c-4e51-834e-f78633cb3130;collision;0;0;1;0;0;Tom collided with sword
+2efac56c-e560-465c-be4f-edc541a391bd;spilling;0;1;1;0;0;blood was spilled
+d9d24256-02dc-4807-aedc-e89c5c4620e6;spilling;0;1;1;0;0;blood was spilled
+b48d8a72-7167-40a3-8765-5dea72d17c8f;spilling;0;1;1;0;0;blood was spilled
+38076c47-120a-4106-939c-45f8b528dcb6;spilling;0;1;1;0;0;vomit was spilled
+5917dd7e-707f-4f03-9795-496bcdf18dd3;spilling;0;1;1;0;0;blood was spilled
+f9ec943d-92a2-41d1-acc5-25afc02fafd1;dialogue;0;0;0;0;0;test said Blaaaaargh!
+f9ec943d-92a2-41d1-acc5-25afc02fafd1;dialogue;0;0;0;0;0;test said Blaaaaargh!
+681444d5-fbf1-44c0-8b5b-6a4673fcaeb8;violence;2;0;2;0;0;test stabbed arm(Clone) Ground
+681444d5-fbf1-44c0-8b5b-6a4673fcaeb8;violence;2;0;2;0;0;test stabbed arm(Clone) Ground
+e03fcbf2-489d-4f81-9c5d-a5c65ab79e34;violence;2;0;2;0;0;test stabbed leg
+e03fcbf2-489d-4f81-9c5d-a5c65ab79e34;violence;2;0;2;0;0;test stabbed leg
+290beee9-e5af-4a9b-8ad0-7307cb09f3d2;destruction;0;0;1;0;0;torso was destroyed
+b0779aae-3569-4a06-aaa0-6c6965bdabf4;violence;2;0;2;0;0;test stabbed eyeball
+6782e5b8-85d2-4029-a315-9d382a5852fa;violence;2;0;2;0;0;test stabbed torso
+e292a493-db62-470a-b8e6-ee0705590b80;violence;2;0;2;0;0;test stabbed arm
+e292a493-db62-470a-b8e6-ee0705590b80;violence;2;0;2;0;0;test stabbed arm
+6782e5b8-85d2-4029-a315-9d382a5852fa;violence;2;0;2;0;0;test stabbed torso
+dd09d8a4-e3b1-4154-a299-b2d3c15fe7ac;violence;2;0;2;0;0;test stabbed brain(Clone) Ground
+e2bbec33-ae7b-4884-9c8c-12cf82255a84;violence;2;0;2;0;0;test stabbed eyeball
+dd09d8a4-e3b1-4154-a299-b2d3c15fe7ac;violence;2;0;2;0;0;test stabbed brain(Clone) Ground
+f6bdf219-3b8d-4bae-9039-6638ff8f3e71;violence;2;0;2;0;0;test stabbed leg
+f6bdf219-3b8d-4bae-9039-6638ff8f3e71;violence;2;0;2;0;0;test stabbed leg
+e2bbec33-ae7b-4884-9c8c-12cf82255a84;violence;2;0;2;0;0;test stabbed eyeball
+b0779aae-3569-4a06-aaa0-6c6965bdabf4;violence;2;0;2;0;0;test stabbed eyeball
+a12c60da-0e5b-469e-9c73-fba4ffe0e4d9;violence;2;0;2;0;0;test stabbed heart(Clone) Ground
+a12c60da-0e5b-469e-9c73-fba4ffe0e4d9;violence;2;0;2;0;0;test stabbed heart(Clone) Ground
+94b27bff-6bef-4a04-a804-7d2b9cdeb790;violence;2;0;2;0;0;test stabbed liver
+94b27bff-6bef-4a04-a804-7d2b9cdeb790;violence;2;0;2;0;0;test stabbed liver
+5f647744-47c9-4979-8d93-5391a4c52810;violence;2;0;2;0;0;test stabbed kidney
+5f647744-47c9-4979-8d93-5391a4c52810;violence;2;0;2;0;0;test stabbed kidney
+f450bd5e-d613-4ba7-9a4e-c75e114b235e;violence;2;0;2;0;0;test stabbed meat chunk
+f450bd5e-d613-4ba7-9a4e-c75e114b235e;violence;2;0;2;0;0;test stabbed meat chunk
+d5fe4360-b84a-404a-92b9-f75aee2b9ae1;violence;2;0;2;0;0;test stabbed meat chunk
+d5fe4360-b84a-404a-92b9-f75aee2b9ae1;violence;2;0;2;0;0;test stabbed meat chunk
+108daee1-ed48-42d1-8f47-f402650ee859;violence;2;0;2;0;0;test stabbed meat chunk(Clone) Ground
+108daee1-ed48-42d1-8f47-f402650ee859;violence;2;0;2;0;0;test stabbed meat chunk(Clone) Ground
+047e7113-fe92-44fc-a673-7f0785467215;violence;2;0;2;0;0;test stabbed meat chunk(Clone) Ground
+047e7113-fe92-44fc-a673-7f0785467215;violence;2;0;2;0;0;test stabbed meat chunk(Clone) Ground
+7f9df72d-816e-4068-8921-89e909913f91;destruction;0;0;1;0;0;heart was destroyed
+a30c7b3b-2e1a-46cd-baa3-3c501a91862f;collision;0;0;1;0;0;Tom collided with sword
+ff677452-fa70-460e-97e1-e35509769bb7;collision;0;0;1;0;0;Tom collided with sword
+0177ca7b-49e0-4603-b871-81fe45572735;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+0177ca7b-49e0-4603-b871-81fe45572735;dialogue;1;0;1;0;-1;test said I don't feel so good!!
+4368df40-72b3-41ae-9b2c-47cd9029c8bc;spilling;0;1;1;0;0;blood was spilled
+d076047e-7ac6-4ae1-af8a-0ea4ff01e5a7;spilling;0;1;1;0;0;blood was spilled
+993756c7-e973-42f0-b03b-7438e5a175c4;spilling;0;1;1;0;0;blood was spilled
+8dd8620b-9664-443c-8dea-a5e9ddbda9b9;spilling;0;1;1;0;0;blood was spilled
+4c056267-fe9f-4acc-82d7-e729f7fc6285;spilling;0;1;1;0;0;blood was spilled
+caebcd88-f606-4edd-aa4f-bdacf1e560fd;eating;3;0;3;3;0;test ate liver
+caebcd88-f606-4edd-aa4f-bdacf1e560fd;cannibalism;3;3;3;4;-3;test commited cannibalism
+caebcd88-f606-4edd-aa4f-bdacf1e560fd;eating;3;0;3;3;0;test ate liver
+caebcd88-f606-4edd-aa4f-bdacf1e560fd;cannibalism;3;3;3;4;-3;test commited cannibalism
+f1481b1e-54c7-4830-83d9-86bbec29c3a8;vomiting;1;2;1;0;0;test vomited up vomited-up liver
+16df8bd4-6952-4f25-9d3f-c4723f781a93;dialogue;0;0;0;0;0;test said Blaaaaargh!
+16df8bd4-6952-4f25-9d3f-c4723f781a93;dialogue;0;0;0;0;0;test said Blaaaaargh!
+f1481b1e-54c7-4830-83d9-86bbec29c3a8;vomiting;1;2;1;0;0;test vomited up vomited-up liver
+9799bfde-d9d2-4303-9939-acfcfc046eca;collision;0;0;1;0;0;Tom collided with liver
+771ca885-161c-4766-a1a0-ade9574f2ff4;eating;3;0;3;3;0;test ate brain
+771ca885-161c-4766-a1a0-ade9574f2ff4;cannibalism;3;3;3;4;-3;test commited cannibalism
+771ca885-161c-4766-a1a0-ade9574f2ff4;eating;3;0;3;3;0;test ate brain
+771ca885-161c-4766-a1a0-ade9574f2ff4;cannibalism;3;3;3;4;-3;test commited cannibalism
+8fde1b4c-1a5e-4877-9c76-565a67f31683;spilling;0;1;1;0;0;vomit was spilled
+4924e474-9803-4187-bc2a-cddae4141a08;spilling;0;1;1;0;0;blood was spilled
+11288ca7-d4e2-49d1-85d2-e21863397246;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+11288ca7-d4e2-49d1-85d2-e21863397246;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+be346ccd-6a10-4d82-b2c3-82e0a4233d52;spilling;0;1;1;0;0;blood was spilled
+d23cfa58-5f1c-4504-8c27-929af07df13c;eating;3;0;3;3;0;test ate leg
+d23cfa58-5f1c-4504-8c27-929af07df13c;cannibalism;3;3;3;4;-3;test commited cannibalism
+d23cfa58-5f1c-4504-8c27-929af07df13c;eating;3;0;3;3;0;test ate leg
+d23cfa58-5f1c-4504-8c27-929af07df13c;cannibalism;3;3;3;4;-3;test commited cannibalism
+17267e30-596a-41bd-8875-ae9aae78ffca;spilling;0;1;1;0;0;blood was spilled
+838e1839-af29-4de5-8314-52ba1ac669ff;vomiting;1;2;1;0;0;test vomited up vomited-up brain
+838e1839-af29-4de5-8314-52ba1ac669ff;vomiting;1;2;1;0;0;test vomited up vomited-up brain
+08765c89-795b-4fba-a2b9-511ec0ac2089;staining;1;2;3;0;0;blood stained test
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+4e1c096c-8e59-4e6d-94fc-75630e1bf688;collision;0;0;1;0;0;Tom collided with droplet
+1ac5611c-6c83-4e75-81ad-e265e397e630;spilling;0;1;1;0;0;blood was spilled
+359774be-3295-4404-869a-298bd115a596;spilling;0;1;1;0;0;vomit was spilled
+61a140bf-f6aa-4b57-8b5a-91ee83472fee;dialogue;0;0;0;0;-1;test said Yuck
+61a140bf-f6aa-4b57-8b5a-91ee83472fee;dialogue;0;0;0;0;-1;test said Yuck
+b741150f-dea4-482d-aac1-1da59b10d80c;throwing;0;0;1;0;0;test threw a bone
+4b399653-e6c6-4074-9356-d0fb32d83b18;eating;0;0;0;0;0;test drank yogurt
+4b399653-e6c6-4074-9356-d0fb32d83b18;yogurt eating;0;0;0;0;1;test ate yogurt
+d2af1ff4-69be-4814-a20b-206e1c8535c2;dialogue;0;0;0;0;1;test said Yummy!
+4b399653-e6c6-4074-9356-d0fb32d83b18;eating;0;0;0;0;0;test drank yogurt
+4b399653-e6c6-4074-9356-d0fb32d83b18;yogurt eating;0;0;0;0;1;test ate yogurt
+d2af1ff4-69be-4814-a20b-206e1c8535c2;dialogue;0;0;0;0;1;test said Yummy!
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+58e24873-30cd-44da-9f2e-c3a03dbab907;staining;0;1;1;0;0;yogurt stained test
+7acd93bf-67c2-49aa-ad4a-92f6344ce55e;collision;0;0;1;0;0;Tom collided with droplet
+b785a937-facd-42f0-bdf1-473c6308e2d3;staining;0;1;1;0;0;yogurt stained test
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+e7203d51-8d81-4a31-9fd6-4c9b4d0d3fd9;collision;0;0;1;0;0;Tom collided with droplet
+6bc57aa7-260b-4ea2-91ec-8880a2cf7b85;staining;0;1;1;0;0;yogurt stained test
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+7f8e385b-f893-413c-bc40-c9c5bb4ac433;collision;0;0;1;0;0;Tom collided with droplet
+f1b034e0-cecd-4d98-ab56-9d0dd52b1588;spilling;0;1;1;0;0;yogurt was spilled
+e1762c32-5088-42a3-8211-b344020c4eec;spilling;0;1;1;0;0;yogurt was spilled
+01bce35b-ee18-4c08-84a4-4db29c727559;spilling;0;1;1;0;0;yogurt was spilled
+76440261-ff01-4d32-971e-638c9a305099;dialogue;0;0;0;0;-1;test said Yuck
+da2130a4-afe6-4179-a148-3e4764c410b8;eating;3;0;3;3;0;test ate eyeball
+da2130a4-afe6-4179-a148-3e4764c410b8;cannibalism;3;3;3;4;-3;test commited cannibalism
+76440261-ff01-4d32-971e-638c9a305099;dialogue;0;0;0;0;-1;test said Yuck
+da2130a4-afe6-4179-a148-3e4764c410b8;eating;3;0;3;3;0;test ate eyeball
+da2130a4-afe6-4179-a148-3e4764c410b8;cannibalism;3;3;3;4;-3;test commited cannibalism
+6b0dfb83-2683-45fb-9cde-26d868a056e3;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+6b0dfb83-2683-45fb-9cde-26d868a056e3;dialogue;1;0;2;0;-2;test said I'm gonna puke!
+9dc708a3-de91-477a-aa59-eb1235a8af0d;vomiting;1;2;1;0;0;test vomited up vomited-up droplet
+9dc708a3-de91-477a-aa59-eb1235a8af0d;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+9dc708a3-de91-477a-aa59-eb1235a8af0d;vomiting;1;2;1;0;0;test vomited up vomited-up droplet
+9dc708a3-de91-477a-aa59-eb1235a8af0d;vomiting yogurt;1;2;2;0;-2;test vomited up yogurt
+1db5b42b-7291-476c-b77a-619f15bc245e;spilling;0;1;1;0;0;vomit was spilled
+6906c579-d75f-4c9b-af39-6b2ac58234ef;spilling;0;1;1;0;0;yogurt was spilled
+ffbf526b-4b9f-4b59-acda-8ea197205f27;dialogue;0;0;0;0;0;test said Blaaaaargh!
+ffbf526b-4b9f-4b59-acda-8ea197205f27;dialogue;0;0;0;0;0;test said Blaaaaargh!
+66dac2df-caf2-4a05-8030-98e13fbc9784;dialogue;0;0;0;0;-1;test said Yuck
+42dab5c8-7cbb-4bc3-8137-5a8b81ea4a86;eating;3;2;3;3;0;test drank blood
+42dab5c8-7cbb-4bc3-8137-5a8b81ea4a86;cannibalism;3;3;3;4;-3;test commited cannibalism
+66dac2df-caf2-4a05-8030-98e13fbc9784;dialogue;0;0;0;0;-1;test said Yuck
+42dab5c8-7cbb-4bc3-8137-5a8b81ea4a86;eating;3;2;3;3;0;test drank blood
+42dab5c8-7cbb-4bc3-8137-5a8b81ea4a86;cannibalism;3;3;3;4;-3;test commited cannibalism
+364fe74b-523d-4d96-ac7f-88cae5c087a9;dialogue;0;0;0;0;0;test said Blaaaaargh!
+d0af51a9-85a1-401a-ba61-f78cecbb4b71;vomiting;1;2;1;0;0;test vomited up vomited-up eyeball
+364fe74b-523d-4d96-ac7f-88cae5c087a9;dialogue;0;0;0;0;0;test said Blaaaaargh!
+d0af51a9-85a1-401a-ba61-f78cecbb4b71;vomiting;1;2;1;0;0;test vomited up vomited-up eyeball
+00000000-0000-0000-0000-000000000000;observation;0;1;1;0;0;I saw stain
+07b1dedf-7861-4c97-94b7-7c0ebfb0a9fb;staining;1;2;3;0;0;blood stained test

@@ -1,0 +1,114 @@
+#p
+!
+.
+
+#main
+<0.5|{intro} >{insult}<0.5|{p}|, {declaration}{p}>
+
+#declaration
+this {object} can get fucked
+fuck off, {object}
+get real
+
+#insult
+What {bad-name}
+{sarcastic-question}
+Screw this <0.5|{participle}|{adjective}> {object}!
+
+#sarcastic-question
+Shouldn't this be in the trash?
+Didn't I see one just like this, in the {location}?
+Did somebody {lose-bad-stuff}?
+
+#lose-bad-stuff
+lose their bullshit?
+smash a {bad-thing} into a {bad-location}?
+
+#bad-thing
+{bad-carrier} full of {bad-items}
+
+#bad-carrier
+carriage
+dumpster
+bucket
+
+#bad-items
+week-old garbage
+rotten fish heads
+
+#bad-location
+wig factory
+biomedical waste dumpster
+flaming dumpster
+circus
+
+#descriptor
+<0.2|{emphatic} ><0.5|{participle}|{adjective}><0.35| <0.5|{participle}|{adjective}>>
+
+#identifier
+<0.5|{noun}|{object}>
+
+#bad-name
+{descriptor} {identifier}
+a {descriptor} {a-noun}
+{descriptor} {identifier}
+
+#a-noun
+trinket
+mockery of a {object}
+substitute for a {object}
+
+#noun
+garbage
+kitsch
+trash
+assness
+
+#intro
+{exclamation}!
+
+#exclamation
+Ugh
+Yuck
+
+#emphatic
+bottom-shelf
+bargain-bin
+imitation
+
+#adjective
+shoddy
+discount
+ten-cent
+ripoff
+imitation
+tasteless
+unfashionable
+crappy
+ramshackle
+
+
+#participle
+{assness}-<0.5|ass|looking>
+
+#assness
+costing-10-cents-on-alibaba
+5-for-3-special-at-kmart
+outsider-art
+buyer-pays-shipping
+postapocalyptic-bargain-bin
+dumpster-picker
+free-with-a-box-of-cereal
+bottom-of-the-barrel
+carnival-sideshow
+
+
+#location
+sewer
+cesspit
+trash
+graveyard
+industrial waste runoff sluice
+waste treatment plant
+wastewater runoff ditch
+septic tank

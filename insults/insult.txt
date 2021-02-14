@@ -1,0 +1,452 @@
+#p
+!
+.
+
+#main
+<0.35|{intro} ><0.5|{insult}|{sarcastic-question}><0.5|{p}|, {declaration}{p}>
+
+
+#declaration
+get fucked
+fuck off
+eat a dick
+<0.5|why don't you |>{do}
+you {bad-name}
+you belong in the {location}
+I fucked your mother
+
+#insult
+I'm not afraid of a {bad-name} like you
+You <0.5|are a >{bad-name}
+I find your {attribute} {offensive}
+
+#intro
+Uh oh! The {location} must be leaking!
+What's that smell?<0.25| A {asshole}?> Oh its you, {bad-address}!
+Who's this {asshole}?
+Look at {bad-address} here!
+Well if it isn't {bad-address}!
+Uh-oh, here comes {bad-address}!
+Get a load of {bad-address}!
+
+#sarcastic-question
+Are you upset {why-upset}?
+Were you just on your way to <0.75|{do}|the {store-type}>?
+Did I interrupt {your-party}?
+Do you know what people call you? {bad-address}{p}
+What {location} {location-action}?
+
+#bad-address
+the <0.5|{meta-adjective} >{bad-name}
+{mister} {bad-name}
+a {bad-name}
+
+#meta-adjective
+{celebrity-adjective}
+{adjective}
+{participle}
+
+#bad-name
+<0.2|{emphatic} ><0.5|{meta-adjective} ><0.45|{meta-adjective} ><0.5|{insult-noun}|{asshole}>
+
+#bad-person
+my dead grandmother
+Hitler
+Mussolini
+a fancy robot
+Kimmy Gibbler
+
+#asshole
+asshole
+total fucking idiot
+clown
+blowjob
+toilet person
+swamp creature
+motherfucker
+dumpster fire
+trash golem
+{celeb-insult}
+
+#participle
+{noun}-{verbing} 
+{celeb-insult}<0.5|-{celebrity-postfix}>-looking
+{dick}-smelling
+{adjective}-ass
+
+#adjective
+bitchmade
+extra-fancy
+trifling
+jumped-up
+ugly
+little
+milquetoast
+snotty
+disgusting
+repulsive
+silly
+ridiculous
+loathsome
+macrocephalic
+tiny-brained
+near-sighted
+odious
+lily-livered
+
+#celebrity-adjective
+discount
+ten-cent
+ripoff
+imitation
+wanna-be
+
+
+#do
+{verb} a {noun}
+{go-and-do}
+
+#why-upset
+because you lost your {dumb-item}
+because you want to {suck-an-animal} but can't find one
+about your {adjective} face
+because {your-party} was canceled?
+about your {attribute}
+about the {sin} laws
+
+#your-party
+your {asshole} convention
+your {bad-organization} fundraiser
+your {dick}-sucking practice
+
+#dumb-item
+cardboard cut-out of {celebrity}
+double-headed dildo
+velvet painting of elvis
+picture of {celebrity} that you like to kiss at night
+little purse full of raisins
+
+#sin
+gambling
+prostitution
+trafficking in human body parts
+racketeering
+tax evasion
+
+
+#bad-organization
+NAMBLA
+KKK
+society of {asshole}s
+{celebrity} fanclub
+
+
+#noun
+pickle
+egg
+weasel
+rat
+male camel
+
+#go-and-do
+go {verb} a {noun}
+take a hike
+go to hell
+piss my piss
+{suck-an-animal}
+
+#emphatic
+complete
+world-class
+class-act
+transparent
+grade-A
+unquestioned
+certified
+total fucking
+
+
+#celeb-insult
+<0.5|{celebrity-adjective} >{celebrity}
+
+#verbing
+fucking
+sucking
+looking
+feeding
+ass
+
+#verb
+fuck
+piss on
+eat
+stick your nose in
+
+#suck-an-animal
+suck {animal}'s <0.25|{dick-adjective} >{dick}<0.25| {with-condiment}>
+
+#animal
+a cheeta
+a male camel
+a polar bear
+a racehorse
+a European bison
+a woolly mammoth
+a snow leopard
+a hyena
+a llama
+a panda bear
+a sloth bear
+a greyhound
+
+#dick-adjective
+funky
+shitty
+smelly
+musty
+
+#dick
+dick
+ass
+cock
+nutsack
+bootyhole
+
+#with-condiment
+with heinz tomato ketchup
+with hoison sauce
+with Miracle Whip
+with whip cream
+
+#celebrity
+Cary Grant
+Julia Child
+Bob Saget
+Steve Buscemi
+Ronald McDonald
+carnival barker
+Abraham Lincoln
+William H. Macy
+cat in the hat
+Don Knotts
+
+
+#celebrity-postfix
+knock-off
+ass
+
+#location
+sewer
+geriatric home
+cesspit
+graveyard
+insane asylum
+pig sty
+industrial waste runoff sluice
+waste treatment plant
+wastewater runoff ditch
+septic tank
+
+#location-action
+did you crawl out from
+do you hail from
+do you call home
+did you escape from
+are you on your way to rob
+are you on your way to
+did you just break out of
+have you been sleeping in
+
+#adjective
+jumped-up
+pompous
+smelly
+cat-in-the-hat-ass
+imbecilic
+
+#adverb
+handily
+starkly
+
+#verbing
+jumping
+fucking
+looking
+sucking
+smelling
+
+#threat-verb
+stomp
+crush
+rip off
+
+#bodypart
+uvula
+head
+pinky toe
+
+#store-type
+{asshole} store<0.5|for total {asshole}s>
+clown store
+Hitler store
+trash picker dump
+kindergarten art sale
+total asshole store
+rag-pickers' convention
+
+#attribute
+whole attitude
+stupidity
+insolence
+lack of moral fiber
+general air of superiority
+airheadedness
+"pie in the sky" ideation
+lack of rigor
+personal failure
+utter failure at life
+conviction for {sin}
+
+#offensive
+offensive
+repellant
+repulsive
+sickening
+vomit-inducing
+very fitting for a {bad-name} like you
+
+#insult-noun
+ignoramus
+imbecile
+aardvark
+abecedarian
+anachronism
+anacoluthon
+antediluvian bulldozer
+anthropithecus
+anthropophagus
+artichoke
+autocrat
+baby-snatcher
+bagpiper
+bald-headed budgerigar
+bandit
+bashi-bazouk
+bath-tub admiral
+beast
+belemnite
+big-head
+blackamoor
+blackguard
+blithering bombardier
+bloodsucker
+blunderbuss
+bodysnatcher
+bootlegger
+borgia
+bougainvillea
+brat
+breathalyser
+brigand
+brute
+buccaneer
+cockatoo
+cannibal
+carpetseller
+caterpillar
+centipede
+cercopithecus
+coconut
+coelcanth
+colocynth
+corsair
+coward
+crabapple
+cro-magnon
+crook
+cushion footed quadruped
+cyclotron
+diplodocus
+dizzard
+dog
+doryphore
+dynamiter
+egoist
+fancy-dress fascist
+fatface
+filibuster
+fourlegged cyrano
+freshwater pirate
+fuzzy wuzzy
+gallows-fodder
+gangster
+gibbering anthropoid
+great flat-footed grizzly bear
+gobbledgook
+goggler
+goosecap
+guano-gatherer
+gyroscope
+harlequin
+heretic
+highwayman
+iconoclast
+idiot
+interplantary goat
+jellied eel
+jellyfish
+jobbernowl
+brute
+logarithim
+megacycle
+mameluke
+monster
+moron
+mountebank
+nanny goat
+nincompoop
+nitwit
+nyctalops
+odd-toed ungulate
+ophicleides
+ostrogoth
+pachyrhizus
+parasite
+phylloxera
+pirate
+pithecanthropus
+poltroon
+popinjay
+profiteer
+psychopath
+pyrographer
+pyromaniac
+raggle taggle
+rapscallion
+rat
+rhizopod
+saucy tramp
+scorpion
+sea-gherkin
+sea louse
+slubberdegullion
+stoolpigeon
+swine
+technocrat
+terrapin
+terrorist
+tin-pot tyrant
+toad
+toffee-nose
+traitor
+tramp
+troglodyte
+turncoat
+ungulate
+vandal
+vermicellis
+viper
+visigoth
+vulture
+weevil
+whippersnapper
