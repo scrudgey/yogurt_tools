@@ -14,6 +14,8 @@ from matplotlib.lines import Line2D
 # allow objects to manage things?
 # allow network to use more state for e.g. placed?
 
+# to place an obstacle, the ability must be placed somewhere.
+# to place an ability, all of the things it eclipses must be in immediate past
 
 def all_in(a, b):
     """Are all items in a in b?"""
